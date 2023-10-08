@@ -1,7 +1,6 @@
-import "./globals.css";
-import { Inter } from "next/font/google";
+import "../styles/globals.css";
 
-const inter = "'Poppins', sans-serif";
+const inter = "'Poppins";
 
 export const metadata = {
   title: "Hand-E-Sport",
