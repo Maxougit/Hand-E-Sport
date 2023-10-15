@@ -3,20 +3,21 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 10, 27, 60; /* Bleu foncé */
+  --background-start-rgb: 92, 127, 168; /* Bleu clair */
+  --background-end-rgb: 247, 199, 72; /* Jaune */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 10, 27, 60; /* Bleu foncé */
+    --background-end-rgb: 92, 127, 168; /* Bleu clair */
   }
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +25,40 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+@keyframes rotatingShadow {
+  0% {
+    box-shadow: 0 0 30px 5px rgba(0, 160, 255, 0.8);
+  }
+  25% {
+    box-shadow: 0 0 30px 5px rgba(0, 110, 230, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 30px 5px rgba(0, 70, 200, 0.8);
+  }
+  75% {
+    box-shadow: 0 0 30px 5px rgba(0, 30, 170, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 30px 5px rgba(0, 0, 140, 0.8);
+  }
+}
+
+.effect-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 10px;
+  animation: rotatingShadow 10s infinite alternate;; /* Ajoutez cette ligne pour l'animation */
+}
+
+
+.text-content {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: justify;
+  line-height: 1.5;
+  padding: 10px;
+  border-radius: 50px; 
 }
