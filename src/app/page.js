@@ -89,8 +89,47 @@ export default function Home() {
       </section>
 
       <section id="who-we-are" className="py-8">
-        <h2 className="text-3xl font-semibold">HAND E-SPORT, C’EST QUI ?</h2>
-        {/* Votre contenu ici */}
+        <h2 className="text-3xl font-semibold mb-8">
+          HAND E-SPORT, C’EST QUI ?
+        </h2>
+        <div className="flex flex-wrap justify-between">
+          <div className="w-full md:w-1/2 lg:w-1/4 p-4">
+            <Image
+              src="/membre1.png"
+              alt="Membre 1"
+              width={200}
+              height={200}
+              objectFit="cover"
+            />
+            <h3 className="text-xl font-bold mt-4">Jean Dupont</h3>
+            <p>
+              Co-fondateur et responsable des partenariats. Jean est passionné
+              par l'e-sport et a travaillé pendant des années dans le domaine de
+              l'inclusion.
+            </p>
+          </div>
+          <div className="w-full md:w-1/2 lg:w-1/4 p-4">
+            <Image
+              src="/membre2.png"
+              alt="Membre 2"
+              width={200}
+              height={200}
+              objectFit="cover"
+            />
+            <h3 className="text-xl font-bold mt-4">Marie Leroux</h3>
+            <p>
+              Directrice de la communication. Marie est une joueuse
+              professionnelle avec une forte envie de faire une différence dans
+              la communauté.
+            </p>
+          </div>
+          {/* Vous pouvez ajouter d'autres membres ici */}
+        </div>
+        <p className="mt-8">
+          L'équipe de HAND E-SPORT est composée de passionnés de jeux vidéo et
+          de défenseurs de l'inclusion. Chacun d'entre eux contribue avec ses
+          compétences et sa passion pour faire de cet événement un succès.
+        </p>
       </section>
 
       {/* Ajoutez d'autres sections ici */}
