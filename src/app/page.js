@@ -1,7 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+
+import PeopleCard from "../components/peopleCard";
 
 export default function Home() {
   const [theme, setTheme] = useState("light");
@@ -37,7 +40,7 @@ export default function Home() {
         <title>Hand E-Sport</title>
       </Head>
 
-      <header className="text-center py-10">
+      <header className="text-center py-6">
         <h1 className="text-5xl font-bold">HAND E-SPORT</h1>
       </header>
 
@@ -60,9 +63,11 @@ export default function Home() {
                 particulière portée à la sensibilisation aux handicaps.
                 <br />
                 Pour ce faire, divers défis liés aux handicaps seront intégrés
-                au tournoi grâce à une roue aléatoire. L'événement aura lieu le
-                9 mars 2024 au CESI de Reims, avec des équipes de cinq joueurs
-                s'affrontant dans plusieurs jeux vidéo.
+                au tournoi grâce à une roue aléatoire.
+                <br />
+                <br />
+                L'événement aura lieu le 9 mars 2024 au CESI de Reims, avec des
+                équipes de cinq joueurs s'affrontant dans plusieurs jeux vidéo.
                 <br />
                 <br />
                 Des stands dédiés à la découverte de technologies adaptées aux
@@ -70,7 +75,7 @@ export default function Home() {
                 <br />
                 <br />
                 Le tout sera diffusé en direct sur Twitch. Pour soutenir
-                l'événement, ils recherchent des partenaires prêts à s'associer
+                l'événement, on recherche des partenaires prêts à s'associer
                 pour une cause inclusive, offrant en retour une visibilité
                 accrue et d'autres avantages promotionnels.
               </p>
@@ -93,37 +98,9 @@ export default function Home() {
           HAND E-SPORT, C’EST QUI ?
         </h2>
         <div className="flex flex-wrap justify-between">
-          <div className="w-full md:w-1/2 lg:w-1/4 p-4">
-            <Image
-              src="/membre1.png"
-              alt="Membre 1"
-              width={200}
-              height={200}
-              objectFit="cover"
-            />
-            <h3 className="text-xl font-bold mt-4">Jean Dupont</h3>
-            <p>
-              Co-fondateur et responsable des partenariats. Jean est passionné
-              par l'e-sport et a travaillé pendant des années dans le domaine de
-              l'inclusion.
-            </p>
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/4 p-4">
-            <Image
-              src="/membre2.png"
-              alt="Membre 2"
-              width={200}
-              height={200}
-              objectFit="cover"
-            />
-            <h3 className="text-xl font-bold mt-4">Marie Leroux</h3>
-            <p>
-              Directrice de la communication. Marie est une joueuse
-              professionnelle avec une forte envie de faire une différence dans
-              la communauté.
-            </p>
-          </div>
-          {/* Vous pouvez ajouter d'autres membres ici */}
+          {/* Affichage des cartes de toutes les personnes pour chaque itération du data.json */}
+
+          <PeopleCard />
         </div>
         <p className="mt-8">
           L'équipe de HAND E-SPORT est composée de passionnés de jeux vidéo et

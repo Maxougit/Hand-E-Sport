@@ -1,0 +1,20 @@
+[
+  {
+    "nomPrenom": "Maxence Leroux",
+    "srcImage": "/membre1.png",
+    "role": "Animateur Twitch & Développeur & BIG BG",
+    "description": "John Doe est un développeur web expérimenté avec plus de 5 ans d'expérience dans le développement de sites web et d'applications. Il est passionné par la création de solutions innovantes pour résoudre les problèmes des clients."
+  },
+  {
+    "nomPrenom": "Benoit Blee",
+    "srcImage": "/membre2.png",
+    "role": "Le patron, pas là pour rire",
+    "description": "John Doe est un développeur web expérimenté avec plus de 5 ans d'expérience dans le développement de sites web et d'applications. Il est passionné par la création de solutions innovantes pour résoudre les problèmes des clients."
+  },
+  {
+    "nomPrenom": "Vincent Leclercq",
+    "srcImage": "/vincent.webp",
+    "role": "La roux de secour",
+    "description": "John Doe est un développeur web expérimenté avec plus de 5 ans d'expérience dans le développement de sites web et d'applications. Il est passionné par la création de solutions innovantes pour résoudre les problèmes des clients."
+  }
+]
