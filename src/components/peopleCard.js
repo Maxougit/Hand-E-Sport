@@ -46,9 +46,9 @@ export default function PeopleCard() {
             <div className="bg-gray-200 rounded-lg overflow-hidden shadow-lg">
               <Image
                 src={person.srcImage}
-                alt={person.name}
-                width={400}
-                height={400}
+                alt={person.srcImage}
+                width={600}
+                height={600}
                 layout="contain"
               />
               <div className="px-6 py-4">
@@ -67,9 +67,9 @@ export default function PeopleCard() {
                 <div className="bg-gray-200 rounded-lg overflow-hidden shadow-lg">
                   <Image
                     src={duplicatePerson.srcImage}
-                    alt={duplicatePerson.name}
-                    width={400}
-                    height={400}
+                    alt={duplicatePerson.srcImage}
+                    width={600}
+                    height={600}
                     layout="contain"
                   />
                   <div className="px-6 py-4">
