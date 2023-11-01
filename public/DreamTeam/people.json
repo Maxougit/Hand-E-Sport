@@ -2,8 +2,8 @@
   {
     "nomPrenom": "Maxence Leroux",
     "srcImage": "/DreamTeam/membre1.png",
-    "role": "Animateur Twitch & Développeur & BIG BG",
-    "description": "John Doe est un développeur web expérimenté avec plus de 5 ans d'expérience dans le développement de sites web et d'applications. Il est passionné par la création de solutions innovantes pour résoudre les problèmes des clients."
+    "role": "Animateur Twitch & Développeur",
+    "description": "Ingénieur en informatique, développeur de ce site web et présentateur de l'événement en live. Passioné par les nouvelles technologies, les jeux vidéos compétitif et le sport. Je suis très heureux de vous accueillir sur ce site web et j'espère vous retrouver sur le live !"
   },
   {
     "nomPrenom": "Benoit Blee",
@@ -16,5 +16,17 @@
     "srcImage": "/DreamTeam/vincent.webp",
     "role": "La roux de secour",
     "description": "John Doe est un développeur web expérimenté avec plus de 5 ans d'expérience dans le développement de sites web et d'applications. Il est passionné par la création de solutions innovantes pour résoudre les problèmes des clients."
+  },
+  {
+    "nomPrenom": "Jules Rogé",
+    "srcImage": "/DreamTeam/JuleRoge.png",
+    "role": "Organisateur du tournoi",
+    "description": "Organisateur de tournoi passionné, je crée des expériences compétitives mémorables pour tous les niveaux, garantissant la convivialité et l'excitation."
+  },
+  {
+    "nomPrenom": "Prenom Nom",
+    "srcImage": "/DreamTeam/envoyer-moi-direct-une-image-ou-un-lien-internet.png",
+    "role": "Role",
+    "description": "Description ~200carcatères"
   }
 ]

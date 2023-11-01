@@ -37,13 +37,13 @@ export default function PeopleCard() {
   return (
     <div
       ref={scrollContainer}
-      className="flex overflow-x-auto w-full scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 hover:scrollbar-thumb-gray-500"
+      className="flex items-stretch overflow-x-auto w-full scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 hover:scrollbar-thumb-gray-500"
       onClick={togglePlay}
     >
       {personData.map((person, index) => (
         <React.Fragment key={index}>
-          <div className="w-full sm:w-1/2 md:w-1/3 p-4 flex-shrink-0">
-            <div className="bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+          <div className="w-full sm:w-1/2 md:w-1/3 p-4 flex-shrink-0 h-full">
+            <div className="bg-gray-200 rounded-lg overflow-hidden shadow-lg h-full">
               <Image
                 src={person.srcImage}
                 alt={person.srcImage}
@@ -56,7 +56,9 @@ export default function PeopleCard() {
                   {person.nomPrenom}
                 </div>
                 <b className="text-gray-700 text-base ">{person.role}</b>
-                <p className="text-gray-700 text-base ">{person.description}</p>
+                <p className="text-gray-700 text-base text-justify">
+                  {person.description}
+                </p>
               </div>
             </div>
           </div>
@@ -64,10 +66,10 @@ export default function PeopleCard() {
           {index === personData.length - 1 &&
             personData.map((duplicatePerson) => (
               <div
-                className="w-full sm:w-1/2 md:w-1/3 p-4 flex-shrink-0"
+                className="w-full sm:w-1/2 md:w-1/3 p-4 flex-shrink-0 h-full"
                 key={duplicatePerson.id}
               >
-                <div className="bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+                <div className="bg-gray-200 rounded-lg overflow-hidden shadow-lg h-full">
                   <Image
                     src={duplicatePerson.srcImage}
                     alt={duplicatePerson.srcImage}
@@ -82,7 +84,7 @@ export default function PeopleCard() {
                     <b className="text-gray-700 text-base ">
                       {duplicatePerson.role}
                     </b>
-                    <p className="text-gray-700 text-base ">
+                    <p className="text-gray-700 text-base text-justify">
                       {duplicatePerson.description}
                     </p>
                   </div>
