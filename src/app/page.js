@@ -44,11 +44,11 @@ export default function Home() {
         <h1 className="text-5xl font-bold">HAND E-SPORT</h1>
       </header>
 
-      <section id="intro" className="py-8 h-screen">
+      <section id="intro" className="py-8">
         <h2 className="text-4xl font-semibold mb-8">
           HAND E-SPORT, C&rsquo;EST QUOI ?
         </h2>
-        <div className="flex items-center">
+        <div className="full-text-container flex items-center">
           <div className="text-container effect-container w-2/3 bg-opacity-30 bg-blue-400 p-5 rounded-lg relative overflow-hidden">
             <div className="text-content">
               <p>

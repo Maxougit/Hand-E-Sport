@@ -69,3 +69,24 @@ body::-webkit-scrollbar {
   padding: 10px;
   border-radius: 50px; 
 }
+
+.flex {
+  display: flex;
+  flex-direction: row; 
+}
+
+@media (max-width: 768px) { 
+  .full-text-container {
+    flex-direction: column-reverse; 
+  }
+
+  .text-container {
+    width: 100% !important;
+    margin-bottom: 15px;   
+  }
+  
+  .image-container {
+    width: 50% !important;
+    padding: 2% !important;
+  }
+}
