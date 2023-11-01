@@ -87,6 +87,6 @@ body::-webkit-scrollbar {
   
   .image-container {
     width: 50% !important;
-    padding: 2% !important;
+    padding-bottom: 5% !important;
   }
 }

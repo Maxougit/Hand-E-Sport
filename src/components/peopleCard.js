@@ -42,7 +42,7 @@ export default function PeopleCard() {
     >
       {personData.map((person, index) => (
         <React.Fragment key={index}>
-          <div className="w-1/3 p-4 flex-shrink-0">
+          <div className="w-1/3 p-4 flex-shrink-0 ">
             <div className="bg-gray-200 rounded-lg overflow-hidden shadow-lg">
               <Image
                 src={person.srcImage}
