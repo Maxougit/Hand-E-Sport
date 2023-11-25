@@ -49,7 +49,6 @@ export default function PeopleCard() {
                 alt={person.srcImage}
                 width={600}
                 height={600}
-                layout="contain"
               />
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2 text-black">
@@ -62,12 +61,11 @@ export default function PeopleCard() {
               </div>
             </div>
           </div>
-          {/* Duplicate the list for the infinite effect */}
           {index === personData.length - 1 &&
-            personData.map((duplicatePerson) => (
+            personData.map((duplicatePerson, uniqueIndex) => (
               <div
                 className="w-full sm:w-1/2 md:w-1/3 p-4 flex-shrink-0 h-full"
-                key={duplicatePerson.id}
+                key={uniqueIndex}
               >
                 <div className="bg-gray-200 rounded-lg overflow-hidden shadow-lg h-full">
                   <Image
@@ -75,7 +73,6 @@ export default function PeopleCard() {
                     alt={duplicatePerson.srcImage}
                     width={600}
                     height={600}
-                    layout="contain"
                   />
                   <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2 text-black">

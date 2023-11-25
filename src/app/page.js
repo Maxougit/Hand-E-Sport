@@ -87,7 +87,6 @@ export default function Home() {
               alt="Description de l'image"
               width={500}
               height={500}
-              objectFit="contain"
             />
           </div>
         </div>
@@ -98,8 +97,6 @@ export default function Home() {
           HAND E-SPORT, C’EST QUI ?
         </h2>
         <div className="flex flex-wrap justify-between">
-          {/* Affichage des cartes de toutes les personnes pour chaque itération du data.json */}
-
           <PeopleCard />
         </div>
         <p className="mt-8">
