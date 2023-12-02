@@ -1,19 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cloner le dépôt (remplacer par l'URL de ton dépôt)
+git clone https://github.com/Maxougit/Hand-E-Sport.git
 
-## Getting Started
+# Aller dans le répertoire du projet
+cd Hand-E-Sport
 
-First, run the development server:
+# Construire l'image Docker
+docker build -t Hand-E-Sport .
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# Exécuter le conteneur en mode détaché et mapper le port 3000
+docker run -d -p 3000:3000 Hand-E-Sport
