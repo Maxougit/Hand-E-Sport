@@ -1,4 +1,4 @@
-# Cloner le dépôt (remplacer par l'URL de ton dépôt)
+# Cloner le dépôt
 
 ```bash
 git clone https://github.com/Maxougit/Hand-E-Sport.git
