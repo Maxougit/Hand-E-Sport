@@ -3,9 +3,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import "src/styles/globals.css";
 
 import PeopleCard from "../components/peopleCard";
 import FooterWithSocialLinks from "../components/footer";
+import BurgerMenu from '../components/burgermenu'; 
 
 export default function Home() {
   const [theme, setTheme] = useState("light");
@@ -40,7 +42,7 @@ export default function Home() {
       <Head>
         <title>Hand E-Sport</title>
       </Head>
-
+      <BurgerMenu/>
       <header className="text-center py-6">
         <h1 className="text-5xl font-bold">HAND E-SPORT</h1>
       </header>
