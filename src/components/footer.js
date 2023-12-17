@@ -17,20 +17,21 @@ export default function FooterWithSocialLinks() {
                         Rights Reserved.
                     </Typography>
                     <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
-                        <Typography as="a" href="https://twitter.com/Handesport99591" className="opacity-80 transition-opacity hover:opacity-100">
+                        <Typography as="a" href="https://twitter.com/Handesport99591" target="_blank" rel="noopener noreferrer" className="opacity-80 transition-opacity hover:opacity-100">
                             <FontAwesomeIcon icon={faTwitter} />
                         </Typography>
-                        <Typography as="a" href="https://www.instagram.com/handesport_reims/" className="opacity-80 transition-opacity hover:opacity-100">
+                        <Typography as="a" href="https://www.instagram.com/handesport_reims/" target="_blank" rel="noopener noreferrer" className="opacity-80 transition-opacity hover:opacity-100">
                             <FontAwesomeIcon icon={faInstagram} />
                         </Typography>
-                        <Typography as="a" href="https://www.youtube.com/channel/UCZMGwikgTRo4zX2LHrRFBgg" className="opacity-80 transition-opacity hover:opacity-100">
+                        <Typography as="a" href="https://www.youtube.com/channel/UCZMGwikgTRo4zX2LHrRFBgg" target="_blank" rel="noopener noreferrer" className="opacity-80 transition-opacity hover:opacity-100">
                             <FontAwesomeIcon icon={faYoutube} />
                         </Typography>
-                        <Typography as="a" href="https://www.twitch.tv/handesport_reims" className="opacity-80 transition-opacity hover:opacity-100">
+                        <Typography as="a" href="https://www.twitch.tv/handesport_reims" target="_blank" rel="noopener noreferrer" className="opacity-80 transition-opacity hover:opacity-100">
                             <FontAwesomeIcon icon={faTwitch} />
                         </Typography>
-                        <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
-                            <FontAwesomeIcon icon={faTiktok} />
+                        <Typography as="a" href="#" target="_blank" rel="noopener noreferrer" className="opacity-80 transition-opacity hover:opacity-100 pointer-events-none">
+                            <FontAwesomeIcon icon={faTiktok} /> 
+                            {/* ce bouton est desactivé pour le moment */}
                         </Typography>
                     </div>
                 </div>
