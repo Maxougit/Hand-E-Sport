@@ -1,0 +1,28 @@
+.container {
+    text-align: center;
+  }
+  
+  .partenairesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .partenaire {
+    width: 200px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .partenaire h2 {
+    margin-top: 10px;
+  }
+  
+  .partenaire p {
+    font-size: 0.9rem;
+  }
+  
