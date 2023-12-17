@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 import PeopleCard from "../components/peopleCard";
+import FooterWithSocialLinks from "../components/footer";
 
 export default function Home() {
   const [theme, setTheme] = useState("light");
@@ -106,11 +107,7 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Ajoutez d'autres sections ici */}
-
-      <footer className="text-center py-6">
-        <p>Contactez-nous: handesport@gmail.com</p>
-      </footer>
+      <FooterWithSocialLinks/>
     </div>
   );
 }
