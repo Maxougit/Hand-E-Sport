@@ -19,5 +19,5 @@ docker build -t handesport .
 # Exécuter le conteneur en mode détaché et mapper le port 3000
 
 ```bash
-docker run -d -p 3000:3000 handesport
+docker run -d --restart always -p 3000:3000 handesport
 ```
