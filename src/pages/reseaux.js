@@ -6,7 +6,7 @@ export default function Integrations() {
   return (
     <Box display="flex" flexDirection="column" alignItems="center">
       <BurgerMenu className="absolute top-0 left-0" />
-      <Typography variant="h3" component="h1" my={4}>
+      <Typography variant="h3" component="h1" my={1}>
         Nos réseaux sociaux
       </Typography>
 
