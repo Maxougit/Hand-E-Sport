@@ -1,34 +1,52 @@
+import React from "react";
 import BurgerMenu from "@/components/burgermenu";
+import { Card, CardContent, Typography, Box } from "@mui/material";
 
 export default function Integrations() {
-    return (
-        <div className="flex flex-col items-center">
-            <BurgerMenu className="absolute top-0 left-0" />
-            <h1 className="text-3xl font-bold my-4">Nos réseaux sociaux</h1>
-            
-            <div className="space-x-4 flex justify-center items-center">
-                <div className="text-center">
-                    <h2 className="text-2xl font-semibold my-2">Twitter</h2>
-                    {/* Replace 'TWITTER_EMBED_CODE' with the actual Twitter embed code */}
-                    <div dangerouslySetInnerHTML={{ __html: 'TWITTER_EMBED_CODE' }} />
-                </div>
+  return (
+    <Box display="flex" flexDirection="column" alignItems="center">
+      <BurgerMenu className="absolute top-0 left-0" />
+      <Typography variant="h3" component="h1" my={4}>
+        Nos réseaux sociaux
+      </Typography>
 
-                <div className="text-center">
-                    <h2 className="text-2xl font-semibold my-2">Twitch</h2>
-                    <iframe
-                        src={`https://player.twitch.tv/?channel=handesport_reims&parent=localhost`}
-                        height="300"
-                        width="400"
-                        allowFullScreen={true}
-                        className="border-none">
-                    </iframe>
-                </div>
+      <Box display="flex" justifyContent="center" alignItems="center" gap={2}>
+        {/* Twitter Card */}
+        <Card>
+          <CardContent>
+            <Typography variant="h5" component="h2" my={2}>
+              Twitter
+            </Typography>
+            <Box dangerouslySetInnerHTML={{ __html: "TWITTER_EMBED_CODE" }} />
+          </CardContent>
+        </Card>
 
-                <div className="text-center">
-                    <h2 className="text-2xl font-semibold my-2">Instagram</h2>
-                    <div id="instagram-feed">Contenu Instagram ici</div>
-                </div>
-            </div>  
-        </div>
-    );
+        {/* Twitch Card */}
+        <Card>
+          <CardContent>
+            <Typography variant="h5" component="h2" my={2}>
+              Twitch
+            </Typography>
+            <iframe
+              src={`https://player.twitch.tv/?channel=handesport_reims&parent=localhost`}
+              height="300"
+              width="400"
+              allowFullScreen={true}
+              className="border-none"
+            ></iframe>
+          </CardContent>
+        </Card>
+
+        {/* Instagram Card */}
+        <Card>
+          <CardContent>
+            <Typography variant="h5" component="h2" my={2}>
+              Instagram
+            </Typography>
+            <div id="instagram-feed">Contenu Instagram ici</div>
+          </CardContent>
+        </Card>
+      </Box>
+    </Box>
+  );
 }
