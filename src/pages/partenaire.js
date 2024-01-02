@@ -6,16 +6,16 @@ import BurgerMenu from '@/components/burgermenu';
 // Simulacre de données des partenaires
 const partenaires = [
   {
-    nom: 'Partenaire 1',
-    logo: '/chemin/vers/logo1.png',
-    description: 'Description du partenaire 1.',
-    lien: 'https://partenaire1.com'
+    nom: 'Crous de Reims',
+    logo: '/PartenaireLogo/crous.png',
+    description: 'Financement et soutien',
+    lien: 'https://www.crous-reims.fr/'
   },
   {
-    nom: 'Partenaire 2',
-    logo: '/chemin/vers/logo2.png',
-    description: 'Description du partenaire 2.',
-    lien: 'https://partenaire2.com'
+    nom: 'CVEC',
+    logo: '/PartenaireLogo/cvec.png',
+    description: 'Financement',
+    lien: 'https://cvec.etudiant.gouv.fr/'
   },
   // Ajoutez d'autres partenaires ici...
 ];

@@ -17,7 +17,7 @@ const BurgerMenu = () => {
       <div className={`${styles.menuItems} ${isOpen ? styles.menuOpen : ''}`}>
         <Link href="/" passHref><span className={styles.menuLink}>Accueil</span></Link>
         <Link href="/galerie" passHref><span className={styles.menuLink}>Galerie</span></Link>
-        <Link href="/partenaire" passHref><span className={styles.menuLink}>Partenaire</span></Link>
+        <Link href="/partenaire" passHref><span className={styles.menuLink}>Partenaires</span></Link>
         <Link href="/reseaux" passHref><span className={styles.menuLink}>Réseaux</span></Link>
       </div>
     </div>

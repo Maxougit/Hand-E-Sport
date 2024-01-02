@@ -1,23 +1,64 @@
-// pages/galerie.js
 import Image from 'next/image';
 import BurgerMenu from '@/components/burgermenu';
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import ImageListItemBar from '@mui/material/ImageListItemBar';
 
-// Array of random picture URLs
-const pictures = [
-    
-];
-
-export default function Galerie() {
+export default function TitlebarBelowMasonryImageList() {
     return (
-        <>
-        <BurgerMenu style={{ position: 'absolute', top: 0, left: 0 }} />
-        <div id="gallery">
-            {pictures.map((pictureUrl, index) => (
-                <div key={index}>
-                    <Image src={pictureUrl} alt={`Picture ${index}`} width={500} height={300} />
-                </div>
-            ))}
+        <div style={{ margin: '0 auto', width: '1300px' }}>
+            <BurgerMenu/>
+            <Box sx={{ }}>
+                <ImageList variant="masonry" cols={3} gap={4}>
+                    {itemData.map((item) => (
+                        <ImageListItem key={item.img}>
+                            <Image
+                                src={`${item.img}?w=auto&fit=crop&auto=format`}
+                                alt={item.title}
+                                loading="lazy"
+                                width={496} 
+                                height={496}
+                            />
+                            <ImageListItemBar position="below" title={item.author} />
+                        </ImageListItem>
+                    ))}
+                </ImageList>
+            </Box>
         </div>
-        </>
     );
 }
+
+const itemData = [
+  {
+    img: '/EventPicture/demo1.jpg',
+    title: 'demo',
+    author: 'demo',
+  },
+  {
+    img: '/EventPicture/demo2.jpg',
+    title: 'demo',
+    author: 'demo',
+  },
+  {
+    img: '/EventPicture/demo3.jpeg',
+    title: 'demo',
+    author: 'demo',
+  },
+  {
+    img: '/EventPicture/demo4.png',
+    title: 'demo',
+    author: 'demo',
+  },
+  {
+    img: '/EventPicture/demo5.jpg',
+    title: 'demo',
+    author: 'demo',
+  },
+  {
+    img: '/EventPicture/demo6.jpg',
+    title: 'demo',
+    author: 'demo',
+  },
+];
