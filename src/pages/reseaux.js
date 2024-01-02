@@ -17,7 +17,12 @@ export default function Integrations() {
             <Typography variant="h5" component="h2" my={2}>
               Twitter
             </Typography>
-            <Box dangerouslySetInnerHTML={{ __html: "TWITTER_EMBED_CODE" }} />
+            {/* https://help.twitter.com/en/using-x/how-to-embed-a-post */}
+            <Box
+              dangerouslySetInnerHTML={{
+                __html: `<blockquote class="twitter-tweet"><p lang="zxx" dir="ltr"><a href="https://t.co/3BNnleMIhY">pic.twitter.com/3BNnleMIhY</a></p>&mdash; Out of Context Human Race (@NoContextHumans) <a href="https://twitter.com/NoContextHumans/status/1741791382702870971?ref_src=twsrc%5Etfw">January 1, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`,
+              }}
+            />
           </CardContent>
         </Card>
 
