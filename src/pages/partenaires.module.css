@@ -1,5 +1,7 @@
 .container {
+    font-family: 'Poppins', sans-serif;
     text-align: center;
+    height: 100vh;
   }
   
   .partenairesList {
@@ -16,6 +18,12 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     text-align: center;
+    display: flex;
+    background: white;
+    color:black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   .partenaire h2 {
