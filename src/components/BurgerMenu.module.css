@@ -1,4 +1,5 @@
 .burgerMenuContainer {
+    font-family: 'Poppins', sans-serif;
     user-select: none;
     position: absolute; /* ou 'fixed' si vous voulez que le menu reste en place lors du défilement */
     top: 0;
@@ -71,7 +72,7 @@
     display: block;
     padding: 10px 15px;
     color: #333333;
-    text-decoration: none;
+    text-decoration: none!important;
     transition: color 0.3s ease;
   }
   
