@@ -7,7 +7,8 @@ import "src/styles/globals.css";
 
 import PeopleCard from "../components/peopleCard";
 import FooterWithSocialLinks from "../components/footer";
-import BurgerMenu from '../components/burgermenu'; 
+import BurgerMenu from "../components/burgermenu";
+import SocialCard from "../components/socialDirectLink";
 
 export default function Home() {
   const [theme, setTheme] = useState("light");
@@ -42,7 +43,7 @@ export default function Home() {
       <Head>
         <title>Hand E-Sport</title>
       </Head>
-      <BurgerMenu/>
+      <BurgerMenu />
       <header className="text-center py-6">
         <h1 className="text-5xl font-bold">HAND E-SPORT</h1>
       </header>
@@ -108,8 +109,11 @@ export default function Home() {
           compétences et sa passion pour faire de cet événement un succès.
         </p>
       </section>
-
-      <FooterWithSocialLinks/>
+      <h2 className="text-3xl font-semibold mb-8">HAND E-SPORT, C’EST OÙ ?</h2>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <SocialCard />
+      </div>
+      <FooterWithSocialLinks />
     </div>
   );
 }
