@@ -1,13 +1,8 @@
 import { Card, CardContent, Typography } from "@mui/material";
 import styled, { keyframes } from "styled-components";
-import {
-  FaTwitter,
-  FaTwitch,
-  FaInstagram,
-  FaYoutube,
-  FaTiktok,
-} from "react-icons/fa";
+import { FaTwitch, FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa";
 import { SiDiscord } from "react-icons/si";
+import { FaXTwitter } from "react-icons/fa6";
 
 // Animation de dégradé qui bouge
 const moveGradient = keyframes`
@@ -37,12 +32,11 @@ const socialMedia = [
   {
     name: "Discord",
     icon: <SiDiscord />,
-    gradient: "linear-gradient(135deg, #7289da, #ffffff)",
+    gradient: "linear-gradient(135deg, #4289ff, #ffffff)",
   },
   {
-    name: "X",
-    icon: <FaTwitter />,
-    gradient: "linear-gradient(135deg, #7289ff, #ffffff)",
+    icon: <FaXTwitter />,
+    gradient: "linear-gradient(135deg, #000000, #ffffff05)",
   },
   {
     name: "Twitch",
