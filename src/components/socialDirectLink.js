@@ -33,37 +33,44 @@ const socialMedia = [
     name: "Discord",
     icon: <SiDiscord />,
     gradient: "linear-gradient(135deg, #4289ff, #ffffff)",
+    link: "https://discord.gg/N3mSpcG4sf",
   },
   {
     icon: <FaXTwitter />,
     gradient: "linear-gradient(135deg, #000000, #ffffff05)",
+    link: "https://twitter.com/",
   },
   {
     name: "Twitch",
     icon: <FaTwitch />,
     gradient: "linear-gradient(135deg, #6441a5, #ffffff)",
+    link: "https://www.twitch.tv/handesport_reims",
   },
   {
     name: "Instagram",
     icon: <FaInstagram />,
     gradient: "linear-gradient(135deg, #e1306c, #f77737)",
+    link: "https://www.instagram.com/handesport_reims/",
   },
   {
     name: "YouTube",
     icon: <FaYoutube />,
     gradient: "linear-gradient(135deg, #ff0000, #ffffff)",
+    link: "https://www.youtube.com/channel/UCZMGwikgTRo4zX2LHrRFBgg",
   },
   {
     name: "TikTok",
     icon: <FaTiktok />,
     gradient: "linear-gradient(135deg, #000000, #ffffff)",
+    link: "https://www.tiktok.com/",
   },
 ];
 
-const SocialCard = ({ name, icon, gradient }) => {
+const SocialCard = ({ name, icon, gradient, link }) => {
   return (
     <GradientCard gradient={gradient}>
       <CardContent
+        onClick={() => window.open(link, "_blank")}
         sx={{
           display: "flex",
           alignItems: "center",
@@ -102,6 +109,7 @@ const SocialMediaGrid = () => {
           name={media.name}
           icon={media.icon}
           gradient={media.gradient}
+          link={media.link}
         />
       ))}
     </div>
