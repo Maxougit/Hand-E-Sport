@@ -63,16 +63,6 @@ export default function FooterWithSocialLinks() {
             >
               <FontAwesomeIcon icon={faTwitch} />
             </Typography>
-            <Typography
-              as="a"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="opacity-80 transition-opacity hover:opacity-100 pointer-events-none"
-            >
-              <FontAwesomeIcon icon={faTiktok} />
-              {/* ce bouton est desactivé pour le moment */}
-            </Typography>
           </div>
         </div>
       </div>
