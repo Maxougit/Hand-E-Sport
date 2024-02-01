@@ -58,12 +58,6 @@ const socialMedia = [
     gradient: "linear-gradient(135deg, #ff0000, #ffffff)",
     link: "https://www.youtube.com/channel/UCZMGwikgTRo4zX2LHrRFBgg",
   },
-  {
-    name: "TikTok",
-    icon: <FaTiktok />,
-    gradient: "linear-gradient(135deg, #000000, #ffffff)",
-    link: "https://www.tiktok.com/",
-  },
 ];
 
 const SocialCard = ({ name, icon, gradient, link }) => {
