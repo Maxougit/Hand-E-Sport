@@ -38,7 +38,7 @@ const socialMedia = [
   {
     icon: <FaXTwitter />,
     gradient: "linear-gradient(135deg, #000000, #ffffff05)",
-    link: "https://twitter.com/",
+    link: "https://x.com/HandESportReims",
   },
   {
     name: "Twitch",
