@@ -29,7 +29,7 @@ export default function FooterWithSocialLinks() {
           <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
             <Typography
               as="a"
-              href="https://twitter.com/Handesport99591"
+              href="https://x.com/HandESportReims"
               target="_blank"
               rel="noopener noreferrer"
               className="opacity-80 transition-opacity hover:opacity-100"
