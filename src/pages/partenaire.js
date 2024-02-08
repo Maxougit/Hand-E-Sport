@@ -1,10 +1,9 @@
 // pages/partenaires.js
 import Image from "next/image";
-import styles from "./partenaires.module.css"; // Assurez-vous de créer ce fichier CSS
+import styles from "./partenaires.module.css";
 import BurgerMenu from "@/components/burgermenu";
 import { Typography } from "@material-ui/core";
 
-// Simulacre de données des partenaires
 const partenaires = [
   {
     nom: "Crous de Reims",
@@ -15,10 +14,27 @@ const partenaires = [
   {
     nom: "CVEC",
     logo: "/PartenaireLogo/cvec.png",
-    description: "Financement",
+    description: "Financement et soutien",
     lien: "https://cvec.etudiant.gouv.fr/",
   },
-  // Ajoutez d'autres partenaires ici...
+  {
+    nom: "CESI",
+    logo: "/PartenaireLogo/cesi.jpg",
+    description: "Financement et soutien",
+    lien: "https://www.cesi.fr/",
+  },
+  {
+    nom: "LDLC",
+    logo: "/PartenaireLogo/LDLC.jpg",
+    description: "Soutient et matériel",
+    lien: "https://cvec.etudiant.gouv.fr/",
+  },
+  {
+    nom: "Université de Reims",
+    logo: "/PartenaireLogo/URCA.jpg",
+    description: "Financement et soutien",
+    lien: "https://cvec.etudiant.gouv.fr/",
+  },
 ];
 
 export default function Partenaires() {
@@ -34,15 +50,16 @@ export default function Partenaires() {
             <a href={partenaire.lien} target="_blank" rel="noopener noreferrer">
               <Image
                 src={partenaire.logo}
-                alt={`Logo de ${partenaire.nom}`}
+                alt={`Logo of ${partenaire.nom}`}
                 width={150}
                 height={150}
+                priority={index === 0} // Add priority to the first image
               />
             </a>
             <Typography variant="h6" my={1}>
               {partenaire.nom}
             </Typography>
-            <Typography variant="Typography">
+            <Typography variant="body1">
               {partenaire.description}
             </Typography>
           </div>
