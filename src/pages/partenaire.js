@@ -26,8 +26,8 @@ const partenaires = [
   {
     nom: "LDLC",
     logo: "/PartenaireLogo/LDLC.jpg",
-    description: "Soutient et matériel",
-    lien: "https://cvec.etudiant.gouv.fr/",
+    description: "Soutient, matériel et récompense du tournoi",
+    lien: "https://www.ldlc.com/",
   },
   {
     nom: "Université de Reims",
@@ -41,7 +41,7 @@ export default function Partenaires() {
   return (
     <div className={styles.container}>
       <BurgerMenu />
-      <Typography variant="h3" component="h1" my={1}>
+      <Typography variant="h1" component="h1" my={1}>
         Nos Partenaires
       </Typography>
       <div className={styles.partenairesList}>

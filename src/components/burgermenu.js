@@ -31,6 +31,9 @@ const BurgerMenu = () => {
         {/* <Link href="/reseaux" passHref>
             <span className={styles.menuLink}>Réseaux</span>
           </Link> */}
+        {/* <Link href="/flyer" passHref>
+          <span className={styles.menuLink}>Flyer</span>
+        </Link> */}
       </div>
     </div>
   );
