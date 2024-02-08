@@ -109,10 +109,22 @@ export default function Home() {
           compétences et sa passion pour faire de cet événement un succès.
         </p>
       </section>
-      <h2 className="text-3xl font-semibold mb-8">HAND E-SPORT, C’EST OÙ ?</h2>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <SocialCard />
-      </div>
+      <section id="where-we-are" className="py-8">
+        <h2 className="text-3xl font-semibold mb-8">HAND E-SPORT, C’EST OÙ ?</h2>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <SocialCard />
+        </div>
+      </section>
+      <section id="planed-event" className="py-8">
+        <h2 className="text-3xl font-semibold mb-8">
+          LES EVENEMENTS PREVUES
+        </h2>
+      </section>
+      <section id="Participate" className="py-8">
+        <h2 className="text-3xl font-semibold mb-8">
+          COMMENT PARTICIPER ?
+        </h2>
+      </section>
       <FooterWithSocialLinks />
     </div>
   );
