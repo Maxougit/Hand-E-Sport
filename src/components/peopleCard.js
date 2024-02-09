@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import Image from "next/image";
-import personData from "public/DreamTeam/people.json";
+import personData from "../../public/DreamTeam/people.json";
 
 import "../styles/peopleCard.css";
 

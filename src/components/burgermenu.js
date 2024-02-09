@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import "src/styles/globals.css";
 import styles from "./BurgerMenu.module.css"; // Assurez-vous de créer ce fichier CSS correspondant
 
 const BurgerMenu = () => {

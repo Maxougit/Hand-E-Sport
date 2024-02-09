@@ -3,7 +3,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import "src/styles/globals.css";
 
 import PeopleCard from "../components/peopleCard";
 import FooterWithSocialLinks from "../components/footer";
