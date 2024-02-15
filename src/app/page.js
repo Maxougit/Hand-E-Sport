@@ -9,6 +9,36 @@ import FooterWithSocialLinks from "../components/footer";
 import BurgerMenu from "../components/burgermenu";
 import SocialCard from "../components/socialDirectLink";
 
+import { Box, Card, CardContent, Button } from "@mui/material";
+import styled, { keyframes } from "styled-components";
+
+const moveGradient = keyframes` 
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+`;
+
+const AnimatedGradientButton = styled(Button)`
+  && {
+    width: 100%;
+    background: linear-gradient(135deg, #4289ff, #ffffff);
+    background-size: 200% 200%;
+    border-radius: 20px;
+    color: #0a1b3c;
+    font-weight: bold;
+    padding: 10px 30px; // Ajustez le padding selon vos besoins
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border: none; // Pour enlever la bordure par défaut des boutons MUI
+
+    &:hover {
+      animation: ${moveGradient} 3s linear infinite;
+      transform: scale(1.02);
+      color: #f7c748; // Changez la couleur du texte au survol si nécessaire
+    }
+  }
+`;
+
 export default function Home() {
   const [theme, setTheme] = useState("light");
 
@@ -112,6 +142,93 @@ export default function Home() {
       <div style={{ display: "flex", justifyContent: "center" }}>
         <SocialCard />
       </div>
+      <section
+        id="Participate"
+        className="py-8"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+        }}
+      >
+        <h2 className="text-3xl font-semibold mb-8">
+          COMMENT S'INSCRIRE À L'ÉVÉNEMENT ?
+        </h2>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column" }, // Colonne sur petits écrans, ligne sur plus grands écrans
+            alignItems: "center", // Étire les éléments enfants pour qu'ils correspondent en hauteur
+            // margin: "10px 20px 0 10px",
+            justifyContent: "center",
+            gap: 3,
+          }}
+        >
+          <Card
+            sx={{
+              padding: "20px",
+              borderRadius: "20px",
+              background: "linear-gradient(135deg, #0a1b3c70, #f7c74845)",
+            }}
+          >
+            <CardContent>
+              <div
+                className="text-content"
+                style={{ color: theme === "dark" ? "white" : "black" }}
+              >
+                <p>
+                  <strong>
+                    Bienvenue à notre événement unique en son genre!&nbsp;
+                  </strong>
+                  Vous avez la possibilité de participer à un passionnant
+                  tournoi e-sport <strong>OU</strong> de découvrir des solutions
+                  pour rendre les jeux vidéos accessible à tous dans la zone
+                  découverte. Voici comment vous pouvez vous joindre à nous !
+                </p>
+                <br />
+                <h2 className="text-2xl font-semibold mb-2">
+                  Zone Découverte :
+                </h2>
+                <p>
+                  Envie de découvrir les dernières accessibilités en terme de
+                  manettes et de jeux? Réservez votre place pour la zone
+                  découverte ! Vous êtes libre de venir à l'heure qui vous
+                  convient, sans contrainte horaire. Veuillez noter que le
+                  service de restauration n'est pas disponible dans cette zone.
+                </p>
+                <br />
+                <h2 className="text-2xl font-semibold mb-2">
+                  Tournoi e-sport :
+                </h2>
+                <p>
+                  Prêt à relever un défi ? Formez une équipe de cinq et
+                  inscrivez-vous pour montrer vos compétences dans notre tournoi
+                  e-sport. Ouvert à tous, vous pouvez vous inscrire seul et nous
+                  vous trouverons une équipe. Les participants au tournoi
+                  bénéficieront d'un service de restauration à midi.
+                </p>
+                <br />
+                <h2 className="text-2xl font-semibold mb-2">Plus d'infos ?</h2>
+                <p>
+                  Pour tous les détails, rendez-vous sur notre serveur Discord
+                  dédié à l'événement (le lien est juste ici). Nous avons hâte
+                  de vous voir parmi nous !
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+          <AnimatedGradientButton
+            onClick={() =>
+              window.open(
+                "https://my.weezevent.com/inscription-hand-e-sport",
+                "_blank"
+              )
+            }
+          >
+            S'inscrire
+          </AnimatedGradientButton>
+        </Box>
+      </section>
       <FooterWithSocialLinks />
     </div>
   );
