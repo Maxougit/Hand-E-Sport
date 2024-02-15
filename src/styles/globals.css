@@ -61,7 +61,7 @@ body::-webkit-scrollbar {
 
 
 .text-content {
-  font-size: 18px;
+  font-size: 18px!important;
   font-weight: bold;
   text-align: justify;
   line-height: 1.5;

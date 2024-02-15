@@ -1,5 +1,6 @@
 // pages/partenaires.js
 import Image from "next/image";
+import "@/styles/globals.css";
 import styles from "./partenaires.module.css";
 import BurgerMenu from "@/components/burgermenu";
 import { Typography } from "@material-ui/core";
@@ -27,7 +28,7 @@ const partenaires = [
     nom: "LDLC",
     logo: "/PartenaireLogo/LDLC.jpg",
     description: "Soutient, matériel et récompense du tournoi",
-    lien: "https://www.ldlc.com/",
+    lien: "https://www.ldlc.com/magasins-ldlc/magasin-470094/51-ldlc-reims-cormontreuil/",
   },
   {
     nom: "Université de Reims",
@@ -41,9 +42,7 @@ export default function Partenaires() {
   return (
     <div className={styles.container}>
       <BurgerMenu />
-      <Typography variant="h1" component="h1" my={1}>
-        Nos Partenaires
-      </Typography>
+      <h1 className="font-semibold mb-2">Nos Partenaires</h1>
       <div className={styles.partenairesList}>
         {partenaires.map((partenaire, index) => (
           <div key={index} className={styles.partenaire}>
@@ -59,9 +58,7 @@ export default function Partenaires() {
             <Typography variant="h6" my={1}>
               {partenaire.nom}
             </Typography>
-            <Typography variant="body1">
-              {partenaire.description}
-            </Typography>
+            <Typography variant="body1">{partenaire.description}</Typography>
           </div>
         ))}
       </div>
