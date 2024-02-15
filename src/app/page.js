@@ -210,8 +210,11 @@ export default function Home() {
                 <br />
                 <h2 className="text-2xl font-semibold mb-2">Plus d'infos ?</h2>
                 <p>
-                  Pour tous les détails, rendez-vous sur notre serveur Discord
-                  dédié à l'événement (le lien est juste ici). Nous avons hâte
+                  Pour tous les détails, rendez-vous sur notre serveur Discord dédié à l'événement
+                  <a href="https://discord.gg/N3mSpcG4sf" target="_blank">
+                    {" "}(<u>le lien est juste ici</u>){" "}
+                  </a>
+                  Nous avons hâte
                   de vous voir parmi nous !
                 </p>
               </div>
