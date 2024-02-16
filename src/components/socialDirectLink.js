@@ -45,7 +45,7 @@ const socialMedia = [
     name: "Twitch",
     icon: <FaTwitch />,
     gradient: "linear-gradient(135deg, #6441a5, #ffffff)",
-    link: "https://www.twitch.tv/handesport_reims",
+    link: "https://www.twitch.tv/handesportreims",
   },
   {
     name: "Instagram",

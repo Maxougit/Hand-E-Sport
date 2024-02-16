@@ -56,7 +56,7 @@ export default function FooterWithSocialLinks() {
             </Typography>
             <Typography
               as="a"
-              href="https://www.twitch.tv/handesport_reims"
+              href="https://www.twitch.tv/handesportreims"
               target="_blank"
               rel="noopener noreferrer"
               className="opacity-80 transition-opacity hover:opacity-100"
