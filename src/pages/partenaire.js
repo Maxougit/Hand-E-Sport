@@ -36,6 +36,12 @@ const partenaires = [
     description: "Financement et soutien",
     lien: "https://cvec.etudiant.gouv.fr/",
   },
+  {
+    nom: "Shino",
+    logo: "/PartenaireLogo/shino.png",
+    description: "Designeur, graphiste",
+    lien: "https://www.instagram.com/shinos_art/",
+  },
 ];
 
 export default function Partenaires() {
