@@ -17,11 +17,11 @@ export default function EnhancedImageGallery() {
         {itemData.map((item, index) => (
           <ImageListItem key={index}>
             <Image
-              src={`${item.img}?w=248&fit=crop&auto=format`}
+              src={`${item.img}`}
               alt={item.title}
               width={248}
+              style={{ layout: "contain", width: "100%", height: "100%" }}
               height={Math.floor(Math.random() * (400 - 250 + 1) + 250)} // Hauteur aléatoire pour un effet masonry plus dynamique
-              layout="responsive"
             />
             <ImageListItemBar
               title={item.title}
@@ -75,10 +75,6 @@ const itemData = [
   {
     img: "/EventPicture/IMG_20240309_170038.jpg",
     title: "Un joueur heureux sur Fallguys",
-  },
-  {
-    img: "/EventPicture/IMG_20240309_170041.jpg",
-    title: "Stand avec @gopandanku",
   },
   {
     img: "/EventPicture/PXL_20240308_134857226.MP.jpg",
