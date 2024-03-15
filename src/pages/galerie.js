@@ -1,64 +1,103 @@
 import Image from "next/image";
-import BurgerMenu from "@/components/burgermenu";
-import * as React from "react";
+import React from "react";
 import Box from "@mui/material/Box";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
+import IconButton from "@mui/material/IconButton";
+import InfoIcon from "@mui/icons-material/Info";
+import BurgerMenu from "@/components/burgermenu";
 
-export default function TitlebarBelowMasonryImageList() {
+// Amélioration de la présentation avec des overlays d'informations et des interactions
+export default function EnhancedImageGallery() {
   return (
-    <div style={{ margin: "0s auto", width: "auto" }}>
+    <Box sx={{ width: "100%", overflowY: "scroll" }}>
       <BurgerMenu />
-      <Box padding={2}>
-        <ImageList variant="masonry" cols={3} gap={4}>
-          {itemData.map((item) => (
-            <ImageListItem key={item.img}>
-              <Image
-                src={`${item.img}?w=auto&fit=crop&auto=format`}
-                alt={item.title}
-                loading="lazy"
-                width={496}
-                height={496}
-              />
-              <ImageListItemBar position="below" title={item.author} />
-            </ImageListItem>
-          ))}
-        </ImageList>
-      </Box>
-    </div>
+      <ImageList variant="masonry" cols={3} gap={8}>
+        {itemData.map((item, index) => (
+          <ImageListItem key={index}>
+            <Image
+              src={`${item.img}?w=248&fit=crop&auto=format`}
+              alt={item.title}
+              width={248}
+              height={Math.floor(Math.random() * (400 - 250 + 1) + 250)} // Hauteur aléatoire pour un effet masonry plus dynamique
+              layout="responsive"
+            />
+            <ImageListItemBar
+              title={item.title}
+              actionIcon={
+                <IconButton
+                  sx={{ color: "rgba(255, 255, 255, 0.54)" }}
+                  aria-label={`info sur ${item.title}`}
+                >
+                  <InfoIcon />
+                </IconButton>
+              }
+              actionPosition="right"
+              position="below"
+            />
+          </ImageListItem>
+        ))}
+      </ImageList>
+    </Box>
   );
 }
 
 const itemData = [
   {
-    img: "/EventPicture/demo1.jpg",
-    title: "demo",
-    author: "demo",
+    img: "/EventPicture/IMG_20240309_105715.jpg",
+    title: "Stand de démonstration Minecraft et the last of us",
   },
   {
-    img: "/EventPicture/demo2.jpg",
-    title: "demo",
-    author: "demo",
+    img: "/EventPicture/IMG_20240309_105835.jpg",
+    title: "Stand de démonstration Fallguys et stand avec @gopandanku",
   },
   {
-    img: "/EventPicture/demo3.jpeg",
-    title: "demo",
-    author: "demo",
+    img: "/EventPicture/IMG_20240309_105933.jpg",
+    title: "Salle tournoi",
   },
   {
-    img: "/EventPicture/demo4.png",
-    title: "demo",
-    author: "demo",
+    img: "/EventPicture/IMG_20240309_105936.jpg",
+    title: "Salle tournoi",
   },
   {
-    img: "/EventPicture/demo5.jpg",
-    title: "demo",
-    author: "demo",
+    img: "/EventPicture/IMG_20240309_110004.jpg",
+    title: "Régie live",
   },
   {
-    img: "/EventPicture/demo6.jpg",
-    title: "demo",
-    author: "demo",
+    img: "/EventPicture/IMG_20240309_110017.jpg",
+    title: "Régie live",
+  },
+  {
+    img: "/EventPicture/IMG_20240309_170035.jpg",
+    title: "Stand fallguys avec playAbility et Xbox Adaptive Controller",
+  },
+  {
+    img: "/EventPicture/IMG_20240309_170038.jpg",
+    title: "Un joueur heureux sur Fallguys",
+  },
+  {
+    img: "/EventPicture/IMG_20240309_170041.jpg",
+    title: "Stand avec @gopandanku",
+  },
+  {
+    img: "/EventPicture/PXL_20240308_134857226.MP.jpg",
+    title: "Point de vue la régie live",
+  },
+  {
+    img: "/EventPicture/PXL_20240308_150950613.jpg",
+    title: "Salle tournoi",
+  },
+  {
+    img: "/EventPicture/PXL_20240308_151016229.jpg",
+    title: "Les beaux ordinateurs de la salle tournoi",
+  },
+  {
+    img: "/EventPicture/PXL_20240308_180044996.jpg",
+    title: "Salle présentation",
+  },
+  {
+    img: "/EventPicture/PXL_20240309_071622489.jpg",
+    title: "La régie live",
   },
 ];
