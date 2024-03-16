@@ -102,9 +102,9 @@ export default function Home() {
                 <br />
                 <br />
                 La première itération de l'événement a eu lieu le 9 mars 2024 au
-                CESI de Reims. Avec un merveilleux tournoi, des stands de
-                présentation et une ambiance chaleureuse, l'événement a été un
-                succès.{" "}
+                CESI de Reims. Avec un super tournoi, des stands de présentation
+                et une ambiance chaleureuse, l'événement a été un succès,
+                accueillant prêt de 50 visiteurs en physique et plus de 200 visiteurs sur notre live.{" "}
                 <Link href="/galerie">
                   <u>Photos de l'événement.</u>
                 </Link>
@@ -117,8 +117,8 @@ export default function Home() {
                 >
                   <u>Twitch</u>
                 </a>
-                . Pour soutenir l'événement lors des prochains événements, on
-                recherche des partenaires prêts à s'associer pour une cause
+                . Pour soutenir l'événement pour les prochaines éditions, nous
+                recherchons des partenaires prêts à s'associer pour une cause
                 inclusive, offrant en retour une visibilité accrue et d'autres
                 avantages promotionnels.
               </p>
