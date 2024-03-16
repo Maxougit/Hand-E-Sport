@@ -48,6 +48,12 @@ const socialMedia = [
     link: "https://www.twitch.tv/handesportreims",
   },
   {
+    name: "Replay Twitch",
+    icon: <FaTwitch />,
+    gradient: "linear-gradient(200deg, #6441a5, #ffffff)",
+    link: "https://www.twitch.tv/videos/2085585097",
+  },
+  {
     name: "Instagram",
     icon: <FaInstagram />,
     gradient: "linear-gradient(135deg, #e1306c, #f77737)",
