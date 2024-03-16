@@ -2,6 +2,7 @@
 "use client";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 import PeopleCard from "../components/peopleCard";
@@ -92,26 +93,34 @@ export default function Home() {
                 <br />
                 <br />
                 Initié par un groupe passionné de Rémois, l'événement consiste
-                en un tournoi esport ouvert à tous, avec une attention
+                en un tournoi e-sport ouvert à tous, avec une attention
                 particulière portée à la sensibilisation aux handicaps.
                 <br />
-                Pour ce faire, divers défis liés aux handicaps seront intégrés
-                au tournoi grâce à une roue aléatoire.
+                Pour ce faire, divers défis liés aux handicaps sont intégrés à
+                un tournoi grâce à une roue aléatoire, le jour de l'événement,
+                en parallèle aux stands de présentation.
                 <br />
                 <br />
-                La première itération de l'événement à eu lieu le 9 mars 2024 au
-                CESI de Reims, avec des équipes de cinq joueurs s'affrontant
-                dans plusieurs jeux vidéo.
+                La première itération de l'événement a eu lieu le 9 mars 2024 au
+                CESI de Reims. Avec un merveilleux tournoi, des stands de
+                présentation et une ambiance chaleureuse, l'événement a été un
+                succès.{" "}
+                <Link href="/galerie">
+                  <u>Photos de l'événement.</u>
+                </Link>
                 <br />
                 <br />
-                Des stands dédiés à la découverte de technologies adaptées aux
-                handicaps seront également présents.
-                <br />
-                <br />
-                Le tout sera diffusé en direct sur Twitch. Pour soutenir
-                l'événement, on recherche des partenaires prêts à s'associer
-                pour une cause inclusive, offrant en retour une visibilité
-                accrue et d'autres avantages promotionnels.
+                Le tout a été diffusé en direct sur{" "}
+                <a
+                  href="https://www.twitch.tv/videos/2085585097"
+                  target="_blank"
+                >
+                  <u>Twitch</u>
+                </a>
+                . Pour soutenir l'événement lors des prochains événements, on
+                recherche des partenaires prêts à s'associer pour une cause
+                inclusive, offrant en retour une visibilité accrue et d'autres
+                avantages promotionnels.
               </p>
             </div>
           </div>
@@ -140,7 +149,7 @@ export default function Home() {
         </p>
       </section>
       <h2 className="text-3xl font-semibold mb-8">
-        HAND E-SPORT, NOUS SUIVRE SUR LES RÉSEAUX !
+        NOUS SUIVRE SUR LES RÉSEAUX !
       </h2>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <SocialCard />
