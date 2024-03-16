@@ -7,41 +7,45 @@ import ImageListItemBar from "@mui/material/ImageListItemBar";
 import IconButton from "@mui/material/IconButton";
 import InfoIcon from "@mui/icons-material/Info";
 import BurgerMenu from "@/components/burgermenu";
+import styles from "./galerie.module.css";
+import "@/styles/globals.css";
 
 // Amélioration de la présentation avec des overlays d'informations et des interactions
 export default function EnhancedImageGallery() {
   return (
-    <Box sx={{ width: "100%", overflowY: "scroll" }}>
-      <BurgerMenu />
-      <ImageList variant="masonry" cols={3} gap={8}>
-        {itemData.map((item, index) => (
-          <ImageListItem key={index}>
-            <Image
-              src={`${item.img}`}
-              alt={item.title}
-              width={248}
-              priority
-              style={{ layout: "contain", width: "100%", height: "100%" }}
-              height={Math.floor(Math.random() * (400 - 250 + 1) + 250)} // Hauteur aléatoire pour un effet masonry plus dynamique
-            />
-            <ImageListItemBar
-              title={item.title}
-              actionIcon={
-                <IconButton
-                  sx={{ color: "rgba(255, 255, 255, 0.54)" }}
-                  aria-label={`info sur ${item.title}`}
-                >
-                  <InfoIcon />
-                </IconButton>
-              }
-              actionPosition="right"
-              position="below"
-            />
-          </ImageListItem>
-        ))}
-      </ImageList>
-      <div id="twitch-embed"></div>
-    </Box>
+    <div className={styles.container}>
+      <Box sx={{ width: "100%", overflowY: "scroll" }}>
+        <BurgerMenu />
+        <ImageList variant="masonry" cols={3} gap={8}>
+          {itemData.map((item, index) => (
+            <ImageListItem key={index}>
+              <Image
+                src={`${item.img}`}
+                alt={item.title}
+                width={248}
+                priority
+                style={{ layout: "contain", width: "100%", height: "100%" }}
+                height={Math.floor(Math.random() * (400 - 250 + 1) + 250)} // Hauteur aléatoire pour un effet masonry plus dynamique
+              />
+              <ImageListItemBar
+                title={item.title}
+                actionIcon={
+                  <IconButton
+                    sx={{ color: "rgba(255, 255, 255, 0.54)" }}
+                    aria-label={`info sur ${item.title}`}
+                  >
+                    <InfoIcon />
+                  </IconButton>
+                }
+                actionPosition="right"
+                position="below"
+              />
+            </ImageListItem>
+          ))}
+        </ImageList>
+        <div id="twitch-embed"></div>
+      </Box>
+    </div>
   );
 }
 
