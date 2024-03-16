@@ -48,7 +48,7 @@ export default function Partenaires() {
   return (
     <div className={styles.container}>
       <BurgerMenu />
-      <h1 className="font-semibold mb-2">Nos Partenaires</h1>
+      <h1 className="font-semibold mb-2 text-6xl">Nos Partenaires</h1>
       <div className={styles.partenairesList}>
         {partenaires.map((partenaire, index) => (
           <div key={index} className={styles.partenaire}>
