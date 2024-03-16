@@ -1,22 +1,41 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import IconButton from "@mui/material/IconButton";
-import InfoIcon from "@mui/icons-material/Info";
+import DownloadIcon from "@mui/icons-material/Download"; // Assurez-vous que cela est bien importé
 import BurgerMenu from "@/components/burgermenu";
 import styles from "./galerie.module.css";
 import "@/styles/globals.css";
+import { Download } from "@mui/icons-material";
 
-// Amélioration de la présentation avec des overlays d'informations et des interactions
 export default function EnhancedImageGallery() {
+  const [numCols, setNumCols] = useState(3);
+
+  useEffect(() => {
+    const updateNumCols = () => {
+      if (window.innerWidth <= 480) {
+        setNumCols(1);
+      } else if (window.innerWidth <= 768) {
+        setNumCols(2);
+      } else {
+        setNumCols(3);
+      }
+    };
+
+    window.addEventListener("resize", updateNumCols);
+    updateNumCols(); // Vérification initiale
+
+    return () => window.removeEventListener("resize", updateNumCols);
+  }, []);
+
   return (
     <div className={styles.container}>
       <Box sx={{ width: "100%", overflowY: "scroll" }}>
         <BurgerMenu />
-        <ImageList variant="masonry" cols={3} gap={8}>
+        <ImageList variant="masonry" cols={numCols} gap={8}>
           {itemData.map((item, index) => (
             <ImageListItem key={index}>
               <Image
@@ -24,17 +43,23 @@ export default function EnhancedImageGallery() {
                 alt={item.title}
                 width={248}
                 priority
-                style={{ layout: "contain", width: "100%", height: "100%" }}
-                height={Math.floor(Math.random() * (400 - 250 + 1) + 250)} // Hauteur aléatoire pour un effet masonry plus dynamique
+                style={{
+                  layout: "contain",
+                  width: "100%",
+                  height: "100%",
+                  borderRadius: "10px",
+                }}
+                height={Math.floor(Math.random() * (400 - 250 + 1) + 250)} // Hauteur aléatoire
               />
               <ImageListItemBar
+                onClick={() => window.open(item.img, "_blank")}
                 title={item.title}
                 actionIcon={
                   <IconButton
                     sx={{ color: "rgba(255, 255, 255, 0.54)" }}
-                    aria-label={`info sur ${item.title}`}
+                    aria-label={`Télécharger ${item.title}`}
                   >
-                    <InfoIcon />
+                    <DownloadIcon />
                   </IconButton>
                 }
                 actionPosition="right"
@@ -43,7 +68,6 @@ export default function EnhancedImageGallery() {
             </ImageListItem>
           ))}
         </ImageList>
-        <div id="twitch-embed"></div>
       </Box>
     </div>
   );
