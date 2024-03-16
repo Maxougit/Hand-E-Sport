@@ -52,19 +52,19 @@ export default function EnhancedImageGallery() {
 const itemData = [
   {
     img: "/EventPicture/IMG_20240309_105715.jpg",
-    title: "Stand de démonstration Minecraft et the last of us",
+    title: "Stand de démonstration Minecraft et The Last of Us",
   },
   {
     img: "/EventPicture/IMG_20240309_105835.jpg",
-    title: "Stand de démonstration Fallguys et stand avec @gopandanku",
+    title: "Stand de démonstration Fall Guys et stand avec @gopandanku",
   },
   {
     img: "/EventPicture/IMG_20240309_105933.jpg",
-    title: "Salle tournoi",
+    title: "Salle de tournoi",
   },
   {
     img: "/EventPicture/IMG_20240309_105936.jpg",
-    title: "Salle tournoi",
+    title: "Salle de tournoi",
   },
   {
     img: "/EventPicture/IMG_20240309_110004.jpg",
@@ -76,27 +76,27 @@ const itemData = [
   },
   {
     img: "/EventPicture/IMG_20240309_170035.jpg",
-    title: "Stand fallguys avec playAbility et Xbox Adaptive Controller",
+    title: "Stand Fall Guys avec PlayAbility et Xbox Adaptive Controller",
   },
   {
     img: "/EventPicture/IMG_20240309_170038.jpg",
-    title: "Un joueur heureux sur Fallguys",
+    title: "Un joueur heureux sur Fall Guys",
   },
   {
     img: "/EventPicture/PXL_20240308_134857226.MP.jpg",
-    title: "Point de vue la régie live",
+    title: "Point de vue de la régie live",
   },
   {
     img: "/EventPicture/PXL_20240308_150950613.jpg",
-    title: "Salle tournoi",
+    title: "Salle de tournoi",
   },
   {
     img: "/EventPicture/PXL_20240308_151016229.jpg",
-    title: "Les beaux ordinateurs de la salle tournoi",
+    title: "Les beaux ordinateurs de la salle de tournoi",
   },
   {
     img: "/EventPicture/PXL_20240308_180044996.jpg",
-    title: "Salle présentation",
+    title: "Salle de présentation",
   },
   {
     img: "/EventPicture/PXL_20240309_071622489.jpg",
@@ -104,15 +104,15 @@ const itemData = [
   },
   {
     img: "/EventPicture/ECE42526-9C7A-4E76-8F1F-8E9E5D89AC74 2.jpeg",
-    title: "Stand fallguys avec playAbility et Xbox Adaptive Controller",
+    title: "Stand Fall Guys avec PlayAbility et Xbox Adaptive Controller",
   },
   {
     img: "/EventPicture/IMG_1990 2.jpeg",
-    title: "Stand minecraft avec playAbility et Xbox Adaptive Controller",
+    title: "Stand Minecraft avec PlayAbility et Xbox Adaptive Controller",
   },
   {
     img: "/EventPicture/IMG_1992 2.jpeg",
-    title: "Salle tournoi",
+    title: "Salle de tournoi",
   },
   {
     img: "/EventPicture/IMG_1993 2.jpeg",
@@ -136,7 +136,7 @@ const itemData = [
   },
   {
     img: "/EventPicture/IMG_2002 2.jpeg",
-    title: "La dream team de Cheffffffff ! Avec deficience visuelle",
+    title: "La dream team de Chef ! Avec déficience visuelle",
   },
   {
     img: "/EventPicture/IMG_2004 2.jpeg",
@@ -144,19 +144,19 @@ const itemData = [
   },
   {
     img: "/EventPicture/IMG_2005 2.jpeg",
-    title: "Concentration maximal pendant le tournoi",
+    title: "Concentration maximale pendant le tournoi",
   },
   {
     img: "/EventPicture/IMG_2006 2.jpeg",
-    title: "Concentration maximal pendant le tournoi",
+    title: "Concentration maximale pendant le tournoi",
   },
   {
     img: "/EventPicture/IMG_2007 2.jpeg",
-    title: "Redifusion du live, interview avec Capgame",
+    title: "Rediffusion du live, interview avec Capgame",
   },
   {
     img: "/EventPicture/IMG_2009 2.jpeg",
-    title: "Défis mobilite réduite",
+    title: "Défis mobilité réduite",
   },
   {
     img: "/EventPicture/IMG_2014 2.jpeg",
@@ -164,6 +164,6 @@ const itemData = [
   },
   {
     img: "/EventPicture/IMG_2015 2.jpeg",
-    title: "Defis playAbility, ouvrir la bouche pour sauter",
+    title: "Défis PlayAbility, ouvrir la bouche pour sauter",
   },
 ];
