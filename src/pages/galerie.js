@@ -20,6 +20,7 @@ export default function EnhancedImageGallery() {
               src={`${item.img}`}
               alt={item.title}
               width={248}
+              priority
               style={{ layout: "contain", width: "100%", height: "100%" }}
               height={Math.floor(Math.random() * (400 - 250 + 1) + 250)} // Hauteur aléatoire pour un effet masonry plus dynamique
             />
@@ -39,6 +40,7 @@ export default function EnhancedImageGallery() {
           </ImageListItem>
         ))}
       </ImageList>
+      <div id="twitch-embed"></div>
     </Box>
   );
 }
@@ -95,5 +97,69 @@ const itemData = [
   {
     img: "/EventPicture/PXL_20240309_071622489.jpg",
     title: "La régie live",
+  },
+  {
+    img: "/EventPicture/ECE42526-9C7A-4E76-8F1F-8E9E5D89AC74 2.jpeg",
+    title: "Stand fallguys avec playAbility et Xbox Adaptive Controller",
+  },
+  {
+    img: "/EventPicture/IMG_1990 2.jpeg",
+    title: "Stand minecraft avec playAbility et Xbox Adaptive Controller",
+  },
+  {
+    img: "/EventPicture/IMG_1992 2.jpeg",
+    title: "Salle tournoi",
+  },
+  {
+    img: "/EventPicture/IMG_1993 2.jpeg",
+    title: "Ordinateur gaming du tournoi",
+  },
+  {
+    img: "/EventPicture/IMG_1995 2.jpeg",
+    title: "Un petit échauffement avant le tournoi",
+  },
+  {
+    img: "/EventPicture/IMG_1997 2.jpeg",
+    title: "Des joueurs heureux !",
+  },
+  {
+    img: "/EventPicture/IMG_1998 2.jpeg",
+    title: "La roue des défis",
+  },
+  {
+    img: "/EventPicture/IMG_1999 2.jpeg",
+    title: "Lunettes de déficience visuelle",
+  },
+  {
+    img: "/EventPicture/IMG_2002 2.jpeg",
+    title: "La dream team de Cheffffffff ! Avec deficience visuelle",
+  },
+  {
+    img: "/EventPicture/IMG_2004 2.jpeg",
+    title: "Stand avec @gopandanku",
+  },
+  {
+    img: "/EventPicture/IMG_2005 2.jpeg",
+    title: "Concentration maximal pendant le tournoi",
+  },
+  {
+    img: "/EventPicture/IMG_2006 2.jpeg",
+    title: "Concentration maximal pendant le tournoi",
+  },
+  {
+    img: "/EventPicture/IMG_2007 2.jpeg",
+    title: "Redifusion du live, interview avec Capgame",
+  },
+  {
+    img: "/EventPicture/IMG_2009 2.jpeg",
+    title: "Défis mobilite réduite",
+  },
+  {
+    img: "/EventPicture/IMG_2014 2.jpeg",
+    title: "",
+  },
+  {
+    img: "/EventPicture/IMG_2015 2.jpeg",
+    title: "Defis playAbility, ouvrir la bouche pour sauter",
   },
 ];
