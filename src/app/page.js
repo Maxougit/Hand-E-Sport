@@ -99,8 +99,9 @@ export default function Home() {
                 au tournoi grâce à une roue aléatoire.
                 <br />
                 <br />
-                L'événement aura lieu le 9 mars 2024 au CESI de Reims, avec des
-                équipes de cinq joueurs s'affrontant dans plusieurs jeux vidéo.
+                La première itération de l'événement à eu lieu le 9 mars 2024 au
+                CESI de Reims, avec des équipes de cinq joueurs s'affrontant
+                dans plusieurs jeux vidéo.
                 <br />
                 <br />
                 Des stands dédiés à la découverte de technologies adaptées aux
@@ -138,11 +139,13 @@ export default function Home() {
           compétences et sa passion pour faire de cet événement un succès.
         </p>
       </section>
-      <h2 className="text-3xl font-semibold mb-8">HAND E-SPORT, C’EST OÙ ?</h2>
+      <h2 className="text-3xl font-semibold mb-8">
+        HAND E-SPORT, NOUS SUIVRE SUR LES RÉSEAUX !
+      </h2>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <SocialCard />
       </div>
-      <section
+      {/*<section
         id="Participate"
         className="py-8"
         style={{
@@ -151,15 +154,14 @@ export default function Home() {
           justifyContent: "center",
         }}
       >
-        <h2 className="text-3xl font-semibold mb-8">
+         <h2 className="text-3xl font-semibold mb-8" >
           COMMENT S'INSCRIRE À L'ÉVÉNEMENT ?
         </h2>
         <Box
           sx={{
             display: "flex",
-            flexDirection: { xs: "column" }, // Colonne sur petits écrans, ligne sur plus grands écrans
-            alignItems: "center", // Étire les éléments enfants pour qu'ils correspondent en hauteur
-            // margin: "10px 20px 0 10px",
+            flexDirection: { xs: "column" },
+            alignItems: "center",
             justifyContent: "center",
             gap: 3,
           }}
@@ -210,12 +212,13 @@ export default function Home() {
                 <br />
                 <h2 className="text-2xl font-semibold mb-2">Plus d'infos ?</h2>
                 <p>
-                  Pour tous les détails, rendez-vous sur notre serveur Discord dédié à l'événement
+                  Pour tous les détails, rendez-vous sur notre serveur Discord
+                  dédié à l'événement
                   <a href="https://discord.gg/N3mSpcG4sf" target="_blank">
-                    {" "}(<u>le lien est juste ici</u>){" "}
+                    {" "}
+                    (<u>le lien est juste ici</u>){" "}
                   </a>
-                  Nous avons hâte
-                  de vous voir parmi nous !
+                  Nous avons hâte de vous voir parmi nous !
                 </p>
               </div>
             </CardContent>
@@ -230,8 +233,8 @@ export default function Home() {
           >
             S'inscrire
           </AnimatedGradientButton>
-        </Box>
-      </section>
+        </Box> 
+      </section> */}
       <FooterWithSocialLinks />
     </div>
   );
