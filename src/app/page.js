@@ -1,5 +1,5 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
+
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -42,30 +42,47 @@ const AnimatedGradientButton = styled(Button)`
 
 export default function Home() {
   const [theme, setTheme] = useState("light");
+  const [timeRemaining, setTimeRemaining] = useState("Calculating...");
 
   useEffect(() => {
-    if (
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    ) {
-      setTheme("dark");
-    }
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
-    const listener = (e) => {
-      if (e.matches) {
-        setTheme("dark");
+    const updateTheme = (e) => {
+      setTheme(e.matches ? "dark" : "light");
+    };
+
+    updateTheme(mediaQuery); // Initial check
+    mediaQuery.addEventListener("change", updateTheme);
+
+    return () => {
+      mediaQuery.removeEventListener("change", updateTheme);
+    };
+  }, []);
+
+  useEffect(() => {
+    const targetDate = new Date("2025-03-08T00:00:00").getTime();
+
+    const updateCountdown = () => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance > 0) {
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        setTimeRemaining(`${days}d ${hours}h ${minutes}m ${seconds}s`);
       } else {
-        setTheme("light");
+        setTimeRemaining("L'événement est en cours ou terminé!");
       }
     };
 
-    window.matchMedia("(prefers-color-scheme: dark)").addListener(listener);
+    const intervalId = setInterval(updateCountdown, 1000);
 
-    return () => {
-      window
-        .matchMedia("(prefers-color-scheme: dark)")
-        .removeListener(listener);
-    };
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
@@ -75,7 +92,13 @@ export default function Home() {
       </Head>
       <BurgerMenu />
       <header className="text-center py-6">
-        <h1 className="text-5xl font-bold">HAND E-SPORT</h1>
+        <h1 className="text-5xl font-bold">HAND E-SPORT V2</h1>
+        <p className="mt-4 text-3xl font-semibold">
+          Compte à rebours jusqu'au 8 mars 2025 :
+        </p>
+        <p className="mt-2 text-4xl font-semibold text-center">
+          {timeRemaining}
+        </p>
       </header>
 
       <section id="intro" className="py-8">
@@ -104,7 +127,8 @@ export default function Home() {
                 La première itération de l'événement a eu lieu le 9 mars 2024 au
                 CESI de Reims. Avec un super tournoi, des stands de présentation
                 et une ambiance chaleureuse, l'événement a été un succès,
-                accueillant prêt de 50 visiteurs en physique et plus de 200 visiteurs sur notre live.{" "}
+                accueillant prêt de 50 visiteurs en physique et plus de 200
+                visiteurs sur notre live.{" "}
                 <Link href="/galerie">
                   <u>Photos de l'événement.</u>
                 </Link>
@@ -154,96 +178,6 @@ export default function Home() {
       <div style={{ display: "flex", justifyContent: "center" }}>
         <SocialCard />
       </div>
-      {/*<section
-        id="Participate"
-        className="py-8"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-        }}
-      >
-         <h2 className="text-3xl font-semibold mb-8" >
-          COMMENT S'INSCRIRE À L'ÉVÉNEMENT ?
-        </h2>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: { xs: "column" },
-            alignItems: "center",
-            justifyContent: "center",
-            gap: 3,
-          }}
-        >
-          <Card
-            sx={{
-              padding: "20px",
-              borderRadius: "20px",
-              background: "linear-gradient(135deg, #0a1b3c70, #f7c74845)",
-            }}
-          >
-            <CardContent>
-              <div
-                className="text-content"
-                style={{ color: theme === "dark" ? "white" : "black" }}
-              >
-                <p>
-                  <strong>
-                    Bienvenue à notre événement unique en son genre!&nbsp;
-                  </strong>
-                  Vous avez la possibilité de participer à un passionnant
-                  tournoi e-sport <strong>OU</strong> de découvrir des solutions
-                  pour rendre les jeux vidéos accessible à tous dans la zone
-                  découverte. Voici comment vous pouvez vous joindre à nous !
-                </p>
-                <br />
-                <h2 className="text-2xl font-semibold mb-2">
-                  Zone Découverte :
-                </h2>
-                <p>
-                  Envie de découvrir les dernières accessibilités en terme de
-                  manettes et de jeux? Réservez votre place pour la zone
-                  découverte ! Vous êtes libre de venir à l'heure qui vous
-                  convient, sans contrainte horaire. Veuillez noter que le
-                  service de restauration n'est pas disponible dans cette zone.
-                </p>
-                <br />
-                <h2 className="text-2xl font-semibold mb-2">
-                  Tournoi e-sport :
-                </h2>
-                <p>
-                  Prêt à relever un défi ? Formez une équipe de cinq et
-                  inscrivez-vous pour montrer vos compétences dans notre tournoi
-                  e-sport. Ouvert à tous, vous pouvez vous inscrire seul et nous
-                  vous trouverons une équipe. Les participants au tournoi
-                  bénéficieront d'un service de restauration à midi.
-                </p>
-                <br />
-                <h2 className="text-2xl font-semibold mb-2">Plus d'infos ?</h2>
-                <p>
-                  Pour tous les détails, rendez-vous sur notre serveur Discord
-                  dédié à l'événement
-                  <a href="https://discord.gg/N3mSpcG4sf" target="_blank">
-                    {" "}
-                    (<u>le lien est juste ici</u>){" "}
-                  </a>
-                  Nous avons hâte de vous voir parmi nous !
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-          <AnimatedGradientButton
-            onClick={() =>
-              window.open(
-                "https://my.weezevent.com/inscription-hand-e-sport",
-                "_blank"
-              )
-            }
-          >
-            S'inscrire
-          </AnimatedGradientButton>
-        </Box> 
-      </section> */}
       <FooterWithSocialLinks />
     </div>
   );

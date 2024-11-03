@@ -1,0 +1,49 @@
+.container {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    ) 
+    rgb(var(--background-start-rgb));
+  }
+  
+  .partenairesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .partenaire {
+    width: 200px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    background: white;
+    color:black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .partenaire h2 {
+    margin-top: 10px;
+  }
+  
+  .partenaire p {
+    font-size: 0.9rem;
+  }
+  
+@media screen and (max-width: 768px){
+  .container {
+    height: 100%;
+  }
+}

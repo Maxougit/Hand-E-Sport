@@ -8,43 +8,19 @@
   {
     "nomPrenom": "Benoit Blée",
     "srcImage": "/DreamTeam/BenoitBlee.jpg",
-    "role": "Chef de projet",
-    "description": "Notre chef de projet, c'est le maître du tournoi ! Il jongle avec les obstacles pour mener son équipe à la victoire, tout en supervisant la préparation de l'événement. 🎮💪 Il a hâte de vous y voir et de partager cette expérience inoubliable ! 🎉"
+    "role": "XXX",
+    "description": "XXXX"
   },
   {
     "nomPrenom": "Vincent Leclercq",
     "srcImage": "/DreamTeam/VincentLeclercq.webp",
-    "role": "Bénévolt polyvalent",
-    "description": "J'ai à cœur de concrétiser ce projet, en accomplissant diverses tâches selon les besoins. Cela inclut l'hébergement des services web, la recherche de partenaires, la prise de contact, ainsi que la mise en place de la base du projet, qui est désormais connu sous le nom de Hand E-sport."
-  },
-  {
-    "nomPrenom": "Jules Rogé",
-    "srcImage": "/DreamTeam/JulesRoge.png",
-    "role": "Organisateur du tournoi",
-    "description": "Organisateur de tournoi passionné, je crée des expériences compétitives mémorables pour tous les niveaux, garantissant la convivialité et l'excitation."
+    "role": "XXX",
+    "description": "XXXX"
   },
   {
     "nomPrenom": "Timmy Liaud",
     "srcImage": "/DreamTeam/TimmyLiaud.jpg",
-    "role": "Staff",
-    "description": "Passionné par les jeux vidéo et le stream, connaissant que trop bien les problèmes liés au handicap dans les jeux vidéos. J'ai hâte qu'un tel projet voie le jour et je suis honoré d'y participer. ^^"
-  },
-  {
-    "nomPrenom": "Timothée Renaud",
-    "srcImage": "/DreamTeam/TimothéeRenaud.png",
-    "role": "Communication dont partenaires",
-    "description": "Mordu de jeux vidéo et créateur d'événements gaming allant d'un simple Lan entre amis à de plus amples tournois rediffusés sur Twitch, Timothée est ici pour partager sa passion et faire en sorte que les différentes communautés puissent se rejoindre au nom de valeurs communes."
-  },
-  {
-    "nomPrenom": "Yanel Dandonneau",
-    "srcImage": "/DreamTeam/YanelDandonneau.jpg",
-    "role": "Organisateur de l'Evenement",
-    "description": "Organisateur d'événements, je conçois des stands pour l'inclusion des personnes en situation de handicap dans le monde des jeux vidéo."
-  },
-  {
-    "nomPrenom": "Alicia Perron",
-    "srcImage": "/DreamTeam/AliciaPerron.jpg",
-    "role": "Responsable Communication",
-    "description": "Amatrice de jeux vidéo, étudiante en communication et secrétaire d'une association esportive rémoise, c'est celle qui s'occupe de notre comm' et de nos réseaux sociaux. Elle adore mettre son grain de sel partout, surtout dans ses games."
+    "role": "XXX",
+    "description": "XXXX"
   }
 ]
