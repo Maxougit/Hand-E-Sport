@@ -3,7 +3,7 @@ import Image from "next/image";
 import "@/styles/globals.css";
 import styles from "./partenaires.module.css";
 import BurgerMenu from "@/components/burgermenu";
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 
 const partenaires = [
   {

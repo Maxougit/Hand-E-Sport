@@ -42,7 +42,7 @@ const AnimatedGradientButton = styled(Button)`
 
 export default function Home() {
   const [theme, setTheme] = useState("light");
-  const [timeRemaining, setTimeRemaining] = useState("Calculating...");
+  const [timeRemaining, setTimeRemaining] = useState("...");
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
@@ -76,7 +76,7 @@ export default function Home() {
 
         setTimeRemaining(`${days}d ${hours}h ${minutes}m ${seconds}s`);
       } else {
-        setTimeRemaining("L'événement est en cours ou terminé!");
+        setTimeRemaining("L&apos;événement est en cours ou terminé!");
       }
     };
 
@@ -94,11 +94,9 @@ export default function Home() {
       <header className="text-center py-6">
         <h1 className="text-5xl font-bold">HAND E-SPORT V2</h1>
         <p className="mt-4 text-3xl font-semibold">
-          Compte à rebours jusqu'au 8 mars 2025 :
+          Compte à rebours jusqu&apos;au 8 mars 2025 :
         </p>
-        <p className="mt-2 text-4xl font-semibold text-center">
-          {timeRemaining}
-        </p>
+        <p className="mt-2 text-5xl font-bold text-center">{timeRemaining}</p>
       </header>
 
       <section id="intro" className="py-8">
@@ -110,27 +108,27 @@ export default function Home() {
             <div className="text-content">
               <p>
                 HAND-E-SPORT est une initiative visant à associer la
-                compétitivité de l'e-sport à la combativité des personnes
+                compétitivité de l&apos;e-sport à la combativité des personnes
                 souffrant de handicaps, promouvant le jeu comme un terrain
-                d'égalité pour tous.
+                d&apos;égalité pour tous.
                 <br />
                 <br />
-                Initié par un groupe passionné de Rémois, l'événement consiste
-                en un tournoi e-sport ouvert à tous, avec une attention
+                Initié par un groupe passionné de Rémois, l&apos;événement
+                consiste en un tournoi e-sport ouvert à tous, avec une attention
                 particulière portée à la sensibilisation aux handicaps.
                 <br />
                 Pour ce faire, divers défis liés aux handicaps sont intégrés à
-                un tournoi grâce à une roue aléatoire, le jour de l'événement,
-                en parallèle aux stands de présentation.
+                un tournoi grâce à une roue aléatoire, le jour de
+                l&apos;événement, en parallèle aux stands de présentation.
                 <br />
                 <br />
-                La première itération de l'événement a eu lieu le 9 mars 2024 au
-                CESI de Reims. Avec un super tournoi, des stands de présentation
-                et une ambiance chaleureuse, l'événement a été un succès,
-                accueillant prêt de 50 visiteurs en physique et plus de 200
-                visiteurs sur notre live.{" "}
+                La première itération de l&apos;événement a eu lieu le 9 mars
+                2024 au CESI de Reims. Avec un super tournoi, des stands de
+                présentation et une ambiance chaleureuse, l&apos;événement a été
+                un succès, accueillant prêt de 50 visiteurs en physique et plus
+                de 200 visiteurs sur notre live.{" "}
                 <Link href="/galerie">
-                  <u>Photos de l'événement.</u>
+                  <u>Photos de l&apos;événement.</u>
                 </Link>
                 <br />
                 <br />
@@ -141,10 +139,10 @@ export default function Home() {
                 >
                   <u>Twitch</u>
                 </a>
-                . Pour soutenir l'événement pour les prochaines éditions, nous
-                recherchons des partenaires prêts à s'associer pour une cause
-                inclusive, offrant en retour une visibilité accrue et d'autres
-                avantages promotionnels.
+                . Pour soutenir l&apos;événement pour les prochaines éditions,
+                nous recherchons des partenaires prêts à s&apos;associer pour
+                une cause inclusive, offrant en retour une visibilité accrue et
+                d&apos;autres avantages promotionnels.
               </p>
             </div>
           </div>
@@ -161,15 +159,16 @@ export default function Home() {
 
       <section id="who-we-are" className="py-8">
         <h2 className="text-3xl font-semibold mb-8">
-          HAND E-SPORT, C’EST QUI ?
+          HAND E-SPORT, C&rsquo;EST QUI ?
         </h2>
         <div className="flex flex-wrap justify-between">
           <PeopleCard />
         </div>
         <p className="mt-8">
-          L'équipe de HAND E-SPORT est composée de passionnés de jeux vidéo et
-          de défenseurs de l'inclusion. Chacun d'entre eux contribue avec ses
-          compétences et sa passion pour faire de cet événement un succès.
+          L&apos;équipe de HAND E-SPORT est composée de passionnés de jeux vidéo
+          et de défenseurs de l&apos;inclusion. Chacun d&apos;entre eux
+          contribue avec ses compétences et sa passion pour faire de cet
+          événement un succès.
         </p>
       </section>
       <h2 className="text-3xl font-semibold mb-8">

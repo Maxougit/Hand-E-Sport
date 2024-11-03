@@ -10,7 +10,7 @@ import BurgerMenu from "../../components/V1/burgermenu";
 import SocialCard from "../../components/V1/socialDirectLink";
 import FooterWithSocialLinks from "@/components/footer";
 
-export default function handesportV1() {
+export default function HandesportV1() {
   const [theme, setTheme] = useState("light");
 
   useEffect(() => {
@@ -44,27 +44,28 @@ export default function handesportV1() {
             <div className="text-content">
               <p>
                 HAND-E-SPORT est une initiative visant à associer la
-                compétitivité de l'e-sport à la combativité des personnes
+                compétitivité de l&apos;e-sport à la combativité des personnes
                 souffrant de handicaps, promouvant le jeu comme un terrain
-                d'égalité pour tous.
+                d&apos;égalité pour tous.
                 <br />
                 <br />
-                Initié par un groupe passionné de Rémois, l'événement consistait
-                en un tournoi e-sport ouvert à tous, avec une attention
-                particulière portée à la sensibilisation aux handicaps.
+                Initié par un groupe passionné de Rémois, l&apos;événement
+                consistait en un tournoi e-sport ouvert à tous, avec une
+                attention particulière portée à la sensibilisation aux
+                handicaps.
                 <br />
                 Divers défis liés aux handicaps étaient intégrés à un tournoi
-                grâce à une roue aléatoire, le jour de l'événement, en parallèle
-                aux stands de présentation.
+                grâce à une roue aléatoire, le jour de l&apos;événement, en
+                parallèle aux stands de présentation.
                 <br />
                 <br />
-                La première itération de l'événement s'est tenue le 9 mars 2024
-                au CESI de Reims. Avec un super tournoi, des stands de
-                présentation et une ambiance chaleureuse, l'événement a été un
-                succès, accueillant près de 50 visiteurs en physique et plus de
-                200 spectateurs sur notre live.{" "}
+                La première itération de l&apos;événement s&apos;est tenue le 9
+                mars 2024 au CESI de Reims. Avec un super tournoi, des stands de
+                présentation et une ambiance chaleureuse, l&apos;événement a été
+                un succès, accueillant près de 50 visiteurs en physique et plus
+                de 200 spectateurs sur notre live.{" "}
                 <Link href="/galerie">
-                  <u>Voir les photos de l'événement.</u>
+                  <u>Voir les photos de l&apos;événement.</u>
                 </Link>
                 <br />
                 <br />
@@ -100,10 +101,10 @@ export default function handesportV1() {
           <PeopleCard />
         </div>
         <p className="mt-8">
-          L'équipe de HAND E-SPORT V1 était composée de passionnés de jeux vidéo
-          et de défenseurs de l'inclusion. Chacun d'entre eux a contribué avec
-          ses compétences et sa passion pour faire de cette première édition un
-          succès.
+          L&apos;équipe de HAND E-SPORT V1 était composée de passionnés de jeux
+          vidéo et de défenseurs de l&apos;inclusion. Chacun d&apos;entre eux a
+          contribué avec ses compétences et sa passion pour faire de cette
+          première édition un succès.
         </p>
       </section>
       <h2 className="text-3xl font-semibold mb-8">
