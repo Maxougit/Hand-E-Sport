@@ -21,3 +21,9 @@ docker build -t handesport .
 ```bash
 docker run -d --restart always -p 3000:3000 handesport
 ```
+
+Avec make :
+
+```bash
+make all
+```
