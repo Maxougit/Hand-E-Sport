@@ -1,5 +1,5 @@
 # Étape 1: Utiliser l'image Node.js
-FROM node:latest
+FROM node:iron-alpine3.19
 
 # Définir le répertoire de travail dans le conteneur
 WORKDIR /usr/src/app

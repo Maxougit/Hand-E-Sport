@@ -48,7 +48,8 @@ export default function EnhancedImageGallery() {
                   height: "100%",
                   borderRadius: "10px",
                 }}
-                height={Math.floor(Math.random() * (400 - 250 + 1) + 250)} 
+                // height={Math.floor(Math.random() * (400 - 250 + 1) + 250)}
+                height={100}
               />
               <ImageListItemBar
                 onClick={() => window.open(item.img, "_blank")}

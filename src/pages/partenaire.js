@@ -2,7 +2,7 @@
 import Image from "next/image";
 import "@/styles/globals.css";
 import styles from "./partenaires.module.css";
-import BurgerMenu from "@/components/burgermenu";
+import BurgerMenu from "@/components/V1/burgermenu";
 import { Typography } from "@mui/material";
 
 const partenaires = [

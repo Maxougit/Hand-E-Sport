@@ -41,18 +41,18 @@ const socialMedia = [
     gradient: "linear-gradient(135deg, #000000, #ffffff05)",
     link: "https://x.com/HandESportReims",
   },
-  {
-    name: "Twitch",
-    icon: <FaTwitch />,
-    gradient: "linear-gradient(135deg, #6441a5, #ffffff)",
-    link: "https://www.twitch.tv/handesportreims",
-  },
-  {
-    name: "Replay Twitch",
-    icon: <FaTwitch />,
-    gradient: "linear-gradient(200deg, #6441a5, #ffffff)",
-    link: "https://www.twitch.tv/videos/2085585097",
-  },
+  // {
+  //   name: "Twitch",
+  //   icon: <FaTwitch />,
+  //   gradient: "linear-gradient(135deg, #6441a5, #ffffff)",
+  //   link: "https://www.twitch.tv/handesportreims",
+  // },
+  // {
+  //   name: "Replay Twitch",
+  //   icon: <FaTwitch />,
+  //   gradient: "linear-gradient(200deg, #6441a5, #ffffff)",
+  //   link: "https://www.twitch.tv/videos/2085585097",
+  // },
   {
     name: "Instagram",
     icon: <FaInstagram />,
