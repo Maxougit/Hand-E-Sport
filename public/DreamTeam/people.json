@@ -34,5 +34,11 @@
     "srcImage": "/DreamTeam/laumelstephan.jpg",
     "role": "Gestion repas",
     "description": "Étudiant en ingénieur informatique, je suis passioné de technologies et de jeux vidéos. Je suis engagé dans l'évènement Hand E-Sport afin de faire découvrir le sujet de l'accessibilité aux jeux vidéos pour les personnes en situation de handicap."
+  },
+  {
+    "nomPrenom": "Evan Gabriel",
+    "srcImage": "/DreamTeam/gabrielevan.jpeg",
+    "role": "Gestionnaire de la Zone Découverte",
+    "description": "Etudiant et futur ingénieur en informtique et nouveau membre d'Hand E-Sport, je suis passionné par les jeux vidéos et par l'envie de décourvrir et de faire découvrir les aspects les plus enfuis et fabuleux que le monde a créé, comme l'accesibilité des handicapés aux jeux vidéos"
   }
 ]
