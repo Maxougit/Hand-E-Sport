@@ -9,19 +9,19 @@
     "nomPrenom": "Benoit Blée",
     "srcImage": "/DreamTeam/BenoitBlee.jpeg",
     "role": "Assistant chef de projet",
-    "description": "Jeune ingénieur optimiste, je gère l'Espace Découverte pour l'événement Hand E-Sport. J'espère vous y voir nombreux en mars pour cette deuxième édition, et vous faire découvrir les dernières avancées en accessibilité dans le jeu vidéo !"
+    "description": "Jeune ingénieur optimiste, je gère l'Espace Découverte pour l'événement Hand-E-Sport. J'espère vous y voir nombreux en mars pour cette deuxième édition, et vous faire découvrir les dernières avancées en accessibilité dans le jeu vidéo !"
   },
   {
     "nomPrenom": "Vincent Leclercq",
     "srcImage": "/DreamTeam/VincentLeclercq.webp",
     "role": "Chef de projet",
-    "description": "Ingénieur en informatique, participant à la création d'Hand E-Sport et chef de projet sur la deuxième édition. Passionné par les nouvelles technologies et les jeux vidéo compétitifs. J'espère vous voir nombreux lors de cette édition."
+    "description": "Ingénieur en informatique, participant à la création d'Hand-E-Sport et chef de projet sur la deuxième édition. Passionné par les nouvelles technologies et les jeux vidéo compétitifs, j'espère vous voir nombreux lors de cette édition."
   },
   {
     "nomPrenom": "Timmy Liaud",
     "srcImage": "/DreamTeam/TimmyLiaud.jpg",
     "role": "Staff & Régie",
-    "description": "Passionné de jeux vidéo et de streaming, je suis engagé pour rendre le jeu vidéo accessible à tous. Participer à un projet comme Hand E-Sport est une opportunité unique pour contribuer à lever les barrières liées au handicap dans ce domaine. J'ai hâte de vous retrouver lors de l'événement !"
+    "description": "Passionné de jeux vidéo et de streaming, je suis engagé pour rendre le jeu vidéo accessible à tous. Participer à un projet comme Hand-E-Sport est une opportunité unique pour contribuer à lever les barrières liées au handicap dans ce domaine. J'ai hâte de vous retrouver lors de l'événement !"
   },
   {
     "nomPrenom": "Maël Gauchey",
@@ -33,12 +33,18 @@
     "nomPrenom": "Stéphan Laumel",
     "srcImage": "/DreamTeam/laumelstephan.jpg",
     "role": "Gestion repas",
-    "description": "Étudiant en ingénieur informatique, je suis passioné de technologies et de jeux vidéos. Je suis engagé dans l'évènement Hand E-Sport afin de faire découvrir le sujet de l'accessibilité aux jeux vidéos pour les personnes en situation de handicap."
+    "description": "Étudiant en ingénierie informatique, je suis passionné par les technologies et les jeux vidéo. Je suis engagé dans l'événement Hand-E-Sport afin de faire découvrir le sujet de l'accessibilité aux jeux vidéo pour les personnes en situation de handicap."
   },
   {
     "nomPrenom": "Evan Gabriel",
     "srcImage": "/DreamTeam/gabrielevan.jpeg",
     "role": "Gestionnaire de la Zone Découverte",
-    "description": "Etudiant et futur ingénieur en informtique et nouveau membre d'Hand E-Sport, je suis passionné par les jeux vidéos et par l'envie de décourvrir et de faire découvrir les aspects les plus enfuis et fabuleux que le monde a créé, comme l'accesibilité des handicapés aux jeux vidéos"
+    "description": "Étudiant et futur ingénieur en informatique et nouveau membre d'Hand-E-Sport, je suis passionné par les jeux vidéo et animé par l'envie de découvrir et de faire découvrir les aspects les plus enfouis et fabuleux que le monde a créés, comme l'accessibilité des personnes handicapées aux jeux vidéo."
+  },
+  {
+    "nomPrenom": "Ferriere Antoine",
+    "srcImage": "/DreamTeam/FerriereAntoine.png",
+    "role": "Responsable zone tournoi",
+    "description": "Ingénieur en informatique, collaborateur au projet Hand-E-Sport, je suis le responsable de la zone tournoi et j'ai hâte de vous y retrouver !"
   }
 ]
