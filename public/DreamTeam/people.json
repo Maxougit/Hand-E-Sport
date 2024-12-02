@@ -46,5 +46,11 @@
     "srcImage": "/DreamTeam/FerriereAntoine.png",
     "role": "Responsable zone tournoi",
     "description": "Ingénieur en informatique, collaborateur au projet Hand-E-Sport, je suis le responsable de la zone tournoi et j'ai hâte de vous y retrouver !"
+  },
+  {
+    "nomPrenom": "Mathéo Remy",
+    "srcImage": "/DreamTeam/MatheoRemy.jpg",
+    "role": "Responsable Communication",
+    "description": "Étudiant en ingénierie informatique, je suis passionné par l’impact social et culturel des jeux vidéo. Chez Hand-E-Sport, nous œuvrons pour promouvoir l’accessibilité et faire du jeu vidéo un espace inclusif pour tous. Participer à ce projet ambitieux est une expérience enrichissante que je suis fier de partager !"
   }
 ]
