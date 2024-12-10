@@ -5,11 +5,10 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import IconButton from "@mui/material/IconButton";
-import DownloadIcon from "@mui/icons-material/Download"; // Assurez-vous que cela est bien importé
 import BurgerMenu from "@/components/burgermenu";
 import styles from "./galerie.module.css";
 import "@/styles/globals.css";
-import { Download } from "@mui/icons-material";
+import { FaEye } from "react-icons/fa";
 
 export default function EnhancedImageGallery() {
   const [numCols, setNumCols] = useState(3);
@@ -26,21 +25,24 @@ export default function EnhancedImageGallery() {
     };
 
     window.addEventListener("resize", updateNumCols);
-    updateNumCols(); // Vérification initiale
+    updateNumCols();
 
     return () => window.removeEventListener("resize", updateNumCols);
   }, []);
+
+  const itemDataGIR24 = getImagesFromGIR24();
 
   return (
     <div className={styles.container}>
       <Box sx={{ width: "100%", overflowY: "scroll" }}>
         <BurgerMenu />
+        <h1>Game in Reims 2024</h1>
         <ImageList variant="masonry" cols={numCols} gap={8}>
-          {itemData.map((item, index) => (
+          {itemDataGIR24.map((item, index) => (
             <ImageListItem key={index}>
               <Image
                 src={`${item.img}`}
-                alt={item.title}
+                alt={item.title || "Image sans titre"}
                 width={248}
                 priority
                 style={{
@@ -49,17 +51,17 @@ export default function EnhancedImageGallery() {
                   height: "100%",
                   borderRadius: "10px",
                 }}
-                height={Math.floor(Math.random() * (400 - 250 + 1) + 250)} // Hauteur aléatoire
+                height={Math.floor(Math.random() * (400 - 250 + 1) + 250)}
               />
               <ImageListItemBar
                 onClick={() => window.open(item.img, "_blank")}
-                title={item.title}
+                title={item.title || "Image sans titre"}
                 actionIcon={
                   <IconButton
                     sx={{ color: "rgba(255, 255, 255, 0.54)" }}
                     aria-label={`Télécharger ${item.title}`}
                   >
-                    <DownloadIcon />
+                    <FaEye />
                   </IconButton>
                 }
                 actionPosition="right"
@@ -73,121 +75,32 @@ export default function EnhancedImageGallery() {
   );
 }
 
-const itemData = [
-  {
-    img: "/EventPicture/IMG_20240309_105715.jpg",
-    title: "Stand de démonstration Minecraft et The Last of Us",
-  },
-  {
-    img: "/EventPicture/IMG_20240309_105835.jpg",
-    title: "Stand de démonstration Fall Guys et stand avec @gopandanku",
-  },
-  {
-    img: "/EventPicture/IMG_20240309_105933.jpg",
-    title: "Salle de tournoi",
-  },
-  {
-    img: "/EventPicture/IMG_20240309_105936.jpg",
-    title: "Salle de tournoi",
-  },
-  {
-    img: "/EventPicture/IMG_20240309_110004.jpg",
-    title: "Régie live",
-  },
-  {
-    img: "/EventPicture/IMG_20240309_110017.jpg",
-    title: "Régie live",
-  },
-  {
-    img: "/EventPicture/IMG_20240309_170035.jpg",
-    title: "Stand Fall Guys avec PlayAbility et Xbox Adaptive Controller",
-  },
-  {
-    img: "/EventPicture/IMG_20240309_170038.jpg",
-    title: "Un joueur heureux sur Fall Guys",
-  },
-  {
-    img: "/EventPicture/PXL_20240308_134857226.MP.jpg",
-    title: "Point de vue de la régie live",
-  },
-  {
-    img: "/EventPicture/PXL_20240308_150950613.jpg",
-    title: "Salle de tournoi",
-  },
-  {
-    img: "/EventPicture/PXL_20240308_151016229.jpg",
-    title: "Les beaux ordinateurs de la salle de tournoi",
-  },
-  {
-    img: "/EventPicture/PXL_20240308_180044996.jpg",
-    title: "Salle de présentation",
-  },
-  {
-    img: "/EventPicture/PXL_20240309_071622489.jpg",
-    title: "La régie live",
-  },
-  {
-    img: "/EventPicture/ECE42526-9C7A-4E76-8F1F-8E9E5D89AC74 2.jpeg",
-    title: "Stand Fall Guys avec PlayAbility et Xbox Adaptive Controller",
-  },
-  {
-    img: "/EventPicture/IMG_1990 2.jpeg",
-    title: "Stand Minecraft avec PlayAbility et Xbox Adaptive Controller",
-  },
-  {
-    img: "/EventPicture/IMG_1992 2.jpeg",
-    title: "Salle de tournoi",
-  },
-  {
-    img: "/EventPicture/IMG_1993 2.jpeg",
-    title: "Ordinateur gaming du tournoi",
-  },
-  {
-    img: "/EventPicture/IMG_1995 2.jpeg",
-    title: "Un petit échauffement avant le tournoi",
-  },
-  {
-    img: "/EventPicture/IMG_1997 2.jpeg",
-    title: "Des joueurs heureux !",
-  },
-  {
-    img: "/EventPicture/IMG_1998 2.jpeg",
-    title: "La roue des défis",
-  },
-  {
-    img: "/EventPicture/IMG_1999 2.jpeg",
-    title: "Lunettes de déficience visuelle",
-  },
-  {
-    img: "/EventPicture/IMG_2002 2.jpeg",
-    title: "La dream team de Chef ! Avec déficience visuelle",
-  },
-  {
-    img: "/EventPicture/IMG_2004 2.jpeg",
-    title: "Stand avec @gopandanku",
-  },
-  {
-    img: "/EventPicture/IMG_2005 2.jpeg",
-    title: "Concentration maximale pendant le tournoi",
-  },
-  {
-    img: "/EventPicture/IMG_2006 2.jpeg",
-    title: "Concentration maximale pendant le tournoi",
-  },
-  {
-    img: "/EventPicture/IMG_2007 2.jpeg",
-    title: "Rediffusion du live, interview avec Capgame",
-  },
-  {
-    img: "/EventPicture/IMG_2009 2.jpeg",
-    title: "Défis mobilité réduite",
-  },
-  {
-    img: "/EventPicture/IMG_2014 2.jpeg",
-    title: "",
-  },
-  {
-    img: "/EventPicture/IMG_2015 2.jpeg",
-    title: "Défis PlayAbility, ouvrir la bouche pour sauter",
-  },
-];
+function getImagesFromGIR24() {
+  return [
+    { img: "/GIR24/846dbcd9.jpg", title: "Stand game in Reims" },
+    { img: "/GIR24/IMG_0199.jpeg", title: "Équipe responsable du stand" },
+    { img: "/GIR24/IMG_0200.jpeg", title: "2 BG" },
+    { img: "/GIR24/IMG_20241117_091704.jpg", title: " " },
+    {
+      img: "/GIR24/IMG_20241117_091727.jpg",
+      title: "Gameplay playAbility minecraft",
+    },
+    {
+      img: "/GIR24/IMG_20241117_104816.jpg",
+      title: "Gameplay playAbility Fortnite",
+    },
+    { img: "/GIR24/IMG_20241117_105044.jpg", title: "Stand Fortnite" },
+    { img: "/GIR24/IMG_20241117_142110.jpg", title: "Stand Cesi x Handesport" },
+    {
+      img: "/GIR24/IMG_20241117_142118.jpg",
+      title: "Stand avec plein de g@meurs",
+    },
+    {
+      img: "/GIR24/PXL_20241116_144655190.MP.jpg",
+      title: "Stand game in Reims",
+    },
+    { img: "/GIR24/PXL_20241117_074845022.MP.jpg", title: "BG seul" },
+    { img: "/GIR24/PXL_20241117_122106128.MP.jpg", title: "Stand minecraft" },
+    { img: "/GIR24/PXL_20241117_122109810.MP.jpg", title: "Stand Fortnite" },
+  ];
+}
