@@ -41,12 +41,12 @@ const socialMedia = [
     gradient: "linear-gradient(135deg, #000000, #ffffff05)",
     link: "https://x.com/HandESportReims",
   },
-  // {
-  //   name: "Twitch",
-  //   icon: <FaTwitch />,
-  //   gradient: "linear-gradient(135deg, #6441a5, #ffffff)",
-  //   link: "https://www.twitch.tv/handesportreims",
-  // },
+  {
+    name: "Twitch",
+    icon: <FaTwitch />,
+    gradient: "linear-gradient(135deg, #6441a5, #ffffff)",
+    link: "https://www.twitch.tv/handesport_reims",
+  },
   // {
   //   name: "Replay Twitch",
   //   icon: <FaTwitch />,
