@@ -25,7 +25,7 @@ export default function FooterWithSocialLinks() {
           </div>
           <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
             <a
-              href="https://x.com/HandESportReims"
+              href="https://x.com/handesport_reims"
               target="_blank"
               rel="noopener noreferrer"
               className="opacity-80 transition-opacity hover:opacity-100"
@@ -49,7 +49,7 @@ export default function FooterWithSocialLinks() {
               <FontAwesomeIcon icon={faYoutube} />
             </a>
             <a
-              href="https://www.twitch.tv/handesportreims"
+              href="https://www.twitch.tv/handesport_reims"
               target="_blank"
               rel="noopener noreferrer"
               className="opacity-80 transition-opacity hover:opacity-100"

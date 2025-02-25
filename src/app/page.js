@@ -136,7 +136,10 @@ export default function Home() {
                 <br />
                 <br />
                 Le tout sera diffusé en direct sur{" "}
-                <a href="https://www.twitch.tv/handesportreims" target="_blank">
+                <a
+                  href="https://www.twitch.tv/handesport_reims"
+                  target="_blank"
+                >
                   <u>Twitch</u>
                 </a>
                 . Pour soutenir l&apos;événement pour les prochaines éditions,
