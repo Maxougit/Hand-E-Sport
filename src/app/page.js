@@ -76,7 +76,7 @@ export default function Home() {
 
         setTimeRemaining(`${days}d ${hours}h ${minutes}m ${seconds}s`);
       } else {
-        setTimeRemaining("L&apos;événement est en cours ou terminé!");
+        setTimeRemaining("L'événement est terminé!");
       }
     };
 
