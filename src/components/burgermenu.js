@@ -21,8 +21,11 @@ const BurgerMenu = () => {
         <Link href="/" passHref>
           <span className={styles.menuLink}>Accueil</span>
         </Link>
-        <Link href="/galerie" passHref>
-          <span className={styles.menuLink}>Galerie</span>
+        <Link href="/galerieHandesport" passHref>
+          <span className={styles.menuLink}>Galerie Handesport</span>
+        </Link>
+        <Link href="/galerieGameInReims" passHref>
+          <span className={styles.menuLink}>Galerie Game in Reims</span>
         </Link>
         {/* <Link href="/partenaire" passHref>
           <span className={styles.menuLink}>Partenaires</span>

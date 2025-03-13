@@ -42,7 +42,7 @@ const AnimatedGradientButton = styled(Button)`
 
 export default function Home() {
   const [theme, setTheme] = useState("light");
-  const [timeRemaining, setTimeRemaining] = useState("...");
+  // const [timeRemaining, setTimeRemaining] = useState("...");
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
@@ -59,31 +59,31 @@ export default function Home() {
     };
   }, []);
 
-  useEffect(() => {
-    const targetDate = new Date("2025-03-08T00:00:00").getTime();
+  // useEffect(() => {
+  //   const targetDate = new Date("2025-03-08T00:00:00").getTime();
 
-    const updateCountdown = () => {
-      const now = new Date().getTime();
-      const distance = targetDate - now;
+  //   const updateCountdown = () => {
+  //     const now = new Date().getTime();
+  //     const distance = targetDate - now;
 
-      if (distance > 0) {
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  //     if (distance > 0) {
+  //       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  //       const hours = Math.floor(
+  //         (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  //       );
+  //       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  //       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        setTimeRemaining(`${days}d ${hours}h ${minutes}m ${seconds}s`);
-      } else {
-        setTimeRemaining("L'événement est terminé!");
-      }
-    };
+  //       setTimeRemaining(`${days}d ${hours}h ${minutes}m ${seconds}s`);
+  //     } else {
+  //       setTimeRemaining("L'événement est terminé!");
+  //     }
+  //   };
 
-    const intervalId = setInterval(updateCountdown, 1000);
+  //   const intervalId = setInterval(updateCountdown, 1000);
 
-    return () => clearInterval(intervalId);
-  }, []);
+  //   return () => clearInterval(intervalId);
+  // }, []);
 
   return (
     <div className="container mx-auto px-4 ">
@@ -93,10 +93,13 @@ export default function Home() {
       <BurgerMenu />
       <header className="text-center py-6">
         <h1 className="text-5xl font-bold">HAND E-SPORT V2</h1>
-        <p className="mt-4 text-3xl font-semibold">
+        {/* <p className="mt-4 text-3xl font-semibold">
           Compte à rebours jusqu&apos;au 8 mars 2025 :
+        </p> */}
+        {/* <p className="mt-2 text-5xl font-bold text-center">{timeRemaining}</p> */}
+        <p className="mt-2 text-5xl font-bold text-center">
+          L&apos;événement a eu lieu le 8 mars 2025
         </p>
-        <p className="mt-2 text-5xl font-bold text-center">{timeRemaining}</p>
       </header>
 
       <section id="intro" className="py-8">
