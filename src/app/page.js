@@ -125,7 +125,7 @@ export default function Home() {
                 l&apos;événement, en parallèle aux stands de présentation.
                 <br />
                 <br />
-                La prochaine itération de l&apos;événement aura lieu le{" "}
+                La prochaine itération de l&apos;événement a eu lieu le{" "}
                 <strong>8 mars 2025</strong> au{" "}
                 <a
                   href="https://www.google.fr/maps/place/Campus+CESI/@49.2315449,4.009956,16z/data=!3m1!4b1!4m6!3m5!1s0x47e9748c4dfd3633:0x21e7a3d383c840e7!8m2!3d49.2315449!4d4.0125309!16s%2Fg%2F1td9vfsp?entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D"
@@ -134,11 +134,11 @@ export default function Home() {
                   <u>CESI de Reims</u>
                 </a>
                 . Avec un super tournoi, des stands de présentation et une
-                ambiance chaleureuse, nous espérons accueuillir plus de 50
+                ambiance chaleureuse, nous avons accueilli plus de 50
                 visiteurs en physique et plus de 200 visiteurs sur notre live.{" "}
                 <br />
                 <br />
-                Le tout sera diffusé en direct sur{" "}
+                Le tout a été diffuser en direct sur{" "}
                 <a
                   href="https://www.twitch.tv/handesport_reims"
                   target="_blank"
