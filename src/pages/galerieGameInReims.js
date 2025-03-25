@@ -41,6 +41,7 @@ export default function EnhancedImageGallery() {
           {itemDataGIR24.map((item, index) => (
             <ImageListItem key={index}>
               <Image
+                onClick={() => window.open(item.img, "_blank")}
                 src={`${item.img}`}
                 alt={item.title || "Image sans titre"}
                 width={248}

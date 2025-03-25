@@ -38,6 +38,7 @@ export default function EnhancedImageGallery() {
           {itemData.map((item, index) => (
             <ImageListItem key={index}>
               <Image
+                onClick={() => window.open(item.img, "_blank")}
                 src={`${item.img}`}
                 alt={item.title}
                 width={248}
