@@ -10,6 +10,8 @@ import styles from "./galerie.module.css";
 import "@/styles/globals.css";
 import { FaEye } from "react-icons/fa";
 
+const getItemHeight = (index) => 250 + ((index * 97) % 151);
+
 export default function EnhancedImageGallery() {
   const [numCols, setNumCols] = useState(3);
 
@@ -52,7 +54,7 @@ export default function EnhancedImageGallery() {
                   height: "100%",
                   borderRadius: "10px",
                 }}
-                height={Math.floor(Math.random() * (400 - 250 + 1) + 250)}
+                height={getItemHeight(index)}
               />
               <ImageListItemBar
                 onClick={() => window.open(item.img, "_blank")}

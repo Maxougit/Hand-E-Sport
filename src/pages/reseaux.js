@@ -4,8 +4,8 @@ import { Card, CardContent, Typography, Box, Grid } from "@mui/material";
 
 const socialsNetwork = [
   () => (
-    <blockquote class="twitter-tweet">
-      <blockquote class="twitter-tweet">
+    <blockquote className="twitter-tweet">
+      <blockquote className="twitter-tweet">
         <p lang="zxx" dir="ltr">
           <a href="https://t.co/3BNnleMIhY">pic.twitter.com/3BNnleMIhY</a>
         </p>
@@ -17,7 +17,7 @@ const socialsNetwork = [
       <script
         async
         src="https://platform.twitter.com/widgets.js"
-        charset="utf-8"
+        charSet="utf-8"
       ></script>
     </blockquote>
   ),
@@ -53,7 +53,7 @@ export default function Integrations() {
       </Typography>
       <Grid container padding={1} spacing={1} justifyContent="center">
         {socialsNetwork.map((EmbedComponent, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
+          <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
             <Card>
               <CardContent
                 sx={{
