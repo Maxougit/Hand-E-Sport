@@ -16,7 +16,7 @@
     "@fortawesome/react-fontawesome": "^3.5.0",
     "@mui/icons-material": "^9.5.0",
     "@mui/material": "^9.5.0",
-    "next": "^16.4.3",
+    "next": "^16.4.6",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-icons": "^5.7.0",
@@ -24,11 +24,11 @@
     "styled-components": "^6.6.0"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.3.3",
-    "eslint": "^9.39.5",
-    "eslint-config-next": "^16.4.3",
-    "postcss": "^8.5.32",
-    "tailwindcss": "^4.3.3"
+    "@tailwindcss/postcss": "^4.3.5",
+    "eslint": "^10.15.0",
+    "eslint-config-next": "^16.4.6",
+    "postcss": "^8.5.33",
+    "tailwindcss": "^4.3.5"
   },
   "overrides": {
     "flatted": "^3.4.1",
@@ -37,7 +37,7 @@
     "sharp": "$sharp",
     "yaml": "^2.8.3",
     "brace-expansion": "^5.0.9",
-    "minimatch": "^10.2.5",
+    "minimatch": "^11.0.9",
     "js-yaml": "^4.3.2",
     "nanoid": "^3.3.18",
     "browserslist": "^4.28.9",
